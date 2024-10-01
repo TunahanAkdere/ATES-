@@ -1,0 +1,65 @@
+.accordion-wrap {
+  border-bottom: 1px solid #d9534f; /* Kırmızı renk */
+  margin-top: 20px;
+  cursor: pointer;
+}
+
+.accordion-button {
+  background-color: #d9534f; /* Kırmızı arka plan */
+  color: white;
+  font-weight: 500;
+  transition: background-color 0.3s ease-in-out;
+}
+
+.accordion-button:not(.collapsed) {
+  background-color: #000000; /* Siyah arka plan */
+}
+
+.accordion-body {
+  background-color: #f8f9fa;
+}
+
+.table {
+  margin-top: 15px;
+}
+
+.table th,
+.table td {
+  text-align: center;
+}
+
+.list-group-item {
+  background-color: #fff;
+  border: 1px solid #e9ecef;
+  transition: transform 0.3s ease-in-out;
+}
+
+.list-group-item:hover {
+  transform: scale(1.02); /* Hover'da büyütme efekti */
+}
+
+.accordion-header {
+  padding: 15px;
+  background-color: #f5f5f5;
+  border-radius: 5px;
+}
+
+/* Responsive Düzenleme */
+@media (max-width: 768px) {
+  .accordion-wrap {
+    padding: 10px;
+  }
+
+  .accordion-header {
+    padding: 10px;
+    font-size: 16px;
+  }
+
+  .list-group-item {
+    font-size: 14px;
+  }
+
+  .accordion-body {
+    padding: 15px;
+  }
+}

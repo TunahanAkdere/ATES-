@@ -25,12 +25,15 @@
 	<link rel="stylesheet" href="css/nice-select.css">
 	<link rel="stylesheet" href="css/main.css">
 	<link rel="stylesheet" href="css/footer.css">
+	<link rel="stylesheet" href="css/counter.css">
+	<link rel="stylesheet" href="css/akordiyon.css">
+
 </head>
 
 <body>
 
 	<!-- Start Header Area -->
-	<header class="default-header">
+	<header class=" default-header">
 		<nav class="navbar navbar-expand-lg navbar-light">
 			<div class="container">
 				<a class="navbar-brand" href="index.html">
@@ -70,7 +73,7 @@
 					</ul>
 				</div>
 			</div>
-			
+
 			<li style="list-style-type: none; padding: 0; margin: 0; text-align: right; margin-right: 50px;">
 				<a href="index.html">
 					<img src="img/img/tr.png" alt="Türk Bayrağı" style="width: 80px; margin-right: 10px;">
@@ -81,7 +84,8 @@
 	<!-- End Header Area -->
 
 	<!-- Start top-section Area -->
-	<section class="banner-area relative" style="background-image: url('img/img/ates-insaat-08.jpg'); background-size: cover; background-position: center;">
+	<section class="banner-area relative"
+		style="background-image: url('img/img/ates-insaat-08.jpg'); background-size: cover; background-position: center;">
 		<div class="overlay overlay-bg"></div>
 		<div class="container">
 			<div class="row justify-content-between align-items-center text-center banner-content">
@@ -92,113 +96,28 @@
 			</div>
 		</div>
 	</section>
-	
+
 	<!-- End top-section Area -->
 
-	<!-- Start features Area -->
-	<section class="features-area section-gap-top" id="news">
-		<div class="container">
-			<div class="row feature_inner">
-				<div class="col-lg-3 col-md-6">
-					<div class="feature-item">
-						<i class="fi flaticon-compass"></i>
-						<h4>Creative Design</h4>
-						<p>Hac facilisi ac vitae consec tetu commodo vel magna suspendisse on senectus pharetra magnfauc
-						</p>
-					</div>
-				</div>
-				<div class="col-lg-3 col-md-6">
-					<div class="feature-item">
-						<i class="fi flaticon-desk"></i>
-						<h4>Experienced Style</h4>
-						<p>Hac facilisi ac vitae consec tetu commodo vel magna suspendisse on senectus pharetra magnfauc
-						</p>
-					</div>
-				</div>
-				<div class="col-lg-3 col-md-6">
-					<div class="feature-item">
-						<i class="fi flaticon-bathroom"></i>
-						<h4>Product Research</h4>
-						<p>Hac facilisi ac vitae consec tetu commodo vel magna suspendisse on senectus pharetra magnfauc
-						</p>
-					</div>
-				</div>
-				<div class="col-lg-3 col-md-6">
-					<div class="feature-item">
-						<i class="fi flaticon-beach"></i>
-						<h4>Affordable Price</h4>
-						<p>Hac facilisi ac vitae consec tetu commodo vel magna suspendisse on senectus pharetra magnfauc
-						</p>
-					</div>
-				</div>
-			</div>
-		</div>
-	</section>
-	<!-- End features Area -->
 
-	<!-- Start Offer Area -->
+
+	<!-- Start Counter Area -->
 	<section class="offer-area relative">
 		<div class="container">
 			<div class="row align-items-center justify-content-end">
-				<div class="col-lg-8 offer-right">
+				<div class="col-lg-12"> <!-- Full width for large screens -->
 					<div class="row">
-						<div class="col-lg-12">
-							<div class="section-title text-left mb-5">
-								<h4>Our Service</h4>
-								<h2>What We Offer For Your <br /> Dream House</h2>
+						<div class="wrapper d-flex flex-wrap justify-content-between">
+							<div class="counter col-lg-5 col-md-6 col-sm-12">
+								<i class="fa fa-truck fa-2x"></i>
+								<h2 class="timer count-title count-number" data-to="36" data-speed="1500"></h2>
+								<p class="count-text">İş Makineleri</p>
 							</div>
-						</div>
-					</div>
-					<div class="row">
-						<div class="col-lg-6 col-md-6">
-							<div class="single-offer">
-								<a href="#">
-									<h4>Architecture</h4>
-								</a>
-								<p>
-									Days so us evening for herb bearing lesser man female night gathering creeping great
-									first our bearing appear
-									multiply dominion.
-								</p>
-							</div>
-						</div>
 
-						<div class="col-lg-6 col-md-6">
-							<div class="single-offer">
-								<a href="#">
-									<h4>3d Modeling</h4>
-								</a>
-								<p>
-									Days so us evening for herb bearing lesser man female night gathering creeping great
-									first our bearing appear
-									multiply dominion.
-								</p>
-							</div>
-						</div>
-
-						<div class="col-lg-6 col-md-6">
-							<div class="single-offer">
-								<a href="#">
-									<h4>2d Modeling</h4>
-								</a>
-								<p>
-									Days so us evening for herb bearing lesser man female night gathering creeping great
-									first our bearing appear
-									multiply dominion.
-								</p>
-							</div>
-						</div>
-
-						<div class="col-lg-6 col-md-6">
-							<div class="single-offer">
-								<a href="#">
-									<h4>Construction</h4>
-								</a>
-								<p>
-									Days so us evening for herb bearing lesser man female night gathering creeping great
-									first our bearing appear
-									multiply dominion.
-								</p>
+							<div class="counter col-lg-5 col-md-6 col-sm-12">
+								<i class="fa fa-car fa-2x"></i>
+								<h2 class="timer count-title count-number" data-to="99" data-speed="1500"></h2>
+								<p class="count-text">Araçlar</p>
 							</div>
 						</div>
 					</div>
@@ -206,7 +125,82 @@
 			</div>
 		</div>
 	</section>
-	<!-- End Offer Area -->
+	<!-- End Counter Area -->
+
+	<!-- Start Accordion Area -->
+	<section class="offer-area relative">
+		<div class="container">
+			<h2 class="text-center mb-5">Kamyon Bilgileri</h2>
+			<div class="accordion" id="kamyonAccordion">
+				<div class="accordion-item accordion-wrap">
+					<h2 class="accordion-header" id="headingOne">
+						<button class="accordion-button" type="button" data-bs-toggle="collapse"
+							data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+							Kamyon Sayısı ve Modelleri
+						</button>
+					</h2>
+					<div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne"
+						data-bs-parent="#kamyonAccordion">
+						<div class="accordion-body">
+							<table class="table">
+								<thead>
+									<tr>
+										<th>Model</th>
+										<th>Marka</th>
+										<th>Yıl</th>
+										<th>Adet</th>
+									</tr>
+								</thead>
+								<tbody>
+									<tr>
+										<td>Ford Cargo 1838</td>
+										<td>Ford</td>
+										<td>2020</td>
+										<td>12</td>
+									</tr>
+									<tr>
+										<td>Mercedes-Benz Actros 3342</td>
+										<td>Mercedes-Benz</td>
+										<td>2021</td>
+										<td>8</td>
+									</tr>
+									<tr>
+										<td>MAN TGS 41.400</td>
+										<td>MAN</td>
+										<td>2019</td>
+										<td>5</td>
+									</tr>
+								</tbody>
+							</table>
+						</div>
+					</div>
+				</div>
+
+				<div class="accordion-item accordion-wrap">
+					<h2 class="accordion-header" id="headingTwo">
+						<button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+							data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+							Kamyon Markaları
+						</button>
+					</h2>
+					<div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo"
+						data-bs-parent="#kamyonAccordion">
+						<div class="accordion-body">
+							<ul class="list-group">
+								<li class="list-group-item">Ford</li>
+								<li class="list-group-item">Mercedes-Benz</li>
+								<li class="list-group-item">MAN</li>
+							</ul>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+	<!-- End Accordion Area -->
+
+
+
 
 	<!-- FOOTER Area -->
 	<footer class="main-footer">
@@ -293,6 +287,8 @@
 	<script src="js/jquery.sticky.js"></script>
 	<script src="js/main.js"></script>
 	<script src="js/banner.js"></script>
+	<script src="js/counter.js"></script>
+	<script src="js/akordiyon.js"></script>
 </body>
 
 </html>
