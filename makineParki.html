@@ -27,7 +27,64 @@
 	<link rel="stylesheet" href="css/footer.css">
 	<link rel="stylesheet" href="css/counter.css">
 	<link rel="stylesheet" href="css/akordiyon.css">
+<style>@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&display=swap');
 
+
+	.accordion-container {
+		width: 80%;
+		max-width: 600px;
+	}
+	
+	.accordion-item {
+		background-color: #FFFFFF; /* White background for items */
+		border: 1px solid #E0E0E0; /* Light border */
+		border-radius: 8px;
+		margin-bottom: 10px;
+		box-shadow: 0 2px 5px rgba(0,0,0,0.1); /* Softer shadow */
+	}
+	
+	.accordion-header {
+		background-color: #6C63FF; /* Soft purple */
+		color: #FFFFFF; /* White text */
+		padding: 15px;
+		font-size: 18px;
+		border: none;
+		width: 100%;
+		text-align: left;
+		cursor: pointer;
+		outline: none;
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+		border-radius: 8px 8px 0 0;
+		transition: background-color 0.3s ease;
+	}
+	
+	.accordion-header:hover {
+		background-color: #5753C9; /* Darker shade of purple */
+	}
+	
+	.accordion-content {
+		background-color: #FAFAFA; /* Very light grey for content */
+		overflow: hidden;
+		padding: 0 15px;
+		max-height: 0;
+		transition: max-height 0.3s ease;
+	}
+	
+	.accordion-content p {
+		margin: 15px 0;
+		line-height: 1.5;
+	}
+	
+	.icon {
+		transition: transform 0.3s ease;
+	}
+	
+	.active .icon {
+		transform: rotate(45deg);
+	}
+	</style>
 </head>
 
 <body>
@@ -130,73 +187,59 @@
 	<!-- Start Accordion Area -->
 	<section class="offer-area relative">
 		<div class="container">
-			<h2 class="text-center mb-5">Kamyon Bilgileri</h2>
-			<div class="accordion" id="kamyonAccordion">
-				<div class="accordion-item accordion-wrap">
-					<h2 class="accordion-header" id="headingOne">
-						<button class="accordion-button" type="button" data-bs-toggle="collapse"
-							data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
-							Kamyon Sayısı ve Modelleri
-						</button>
-					</h2>
-					<div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne"
-						data-bs-parent="#kamyonAccordion">
-						<div class="accordion-body">
-							<table class="table">
-								<thead>
-									<tr>
-										<th>Model</th>
-										<th>Marka</th>
-										<th>Yıl</th>
-										<th>Adet</th>
-									</tr>
-								</thead>
-								<tbody>
-									<tr>
-										<td>Ford Cargo 1838</td>
-										<td>Ford</td>
-										<td>2020</td>
-										<td>12</td>
-									</tr>
-									<tr>
-										<td>Mercedes-Benz Actros 3342</td>
-										<td>Mercedes-Benz</td>
-										<td>2021</td>
-										<td>8</td>
-									</tr>
-									<tr>
-										<td>MAN TGS 41.400</td>
-										<td>MAN</td>
-										<td>2019</td>
-										<td>5</td>
-									</tr>
-								</tbody>
-							</table>
-						</div>
+			<div class="accordion-container">
+				<div class="accordion-item">
+					<button class="accordion-header">
+						FAQ Question 1 <span class="icon">+</span>
+					</button>
+					<div class="accordion-content">
+						<p>Answer to question 1...</p>
 					</div>
 				</div>
-
-				<div class="accordion-item accordion-wrap">
-					<h2 class="accordion-header" id="headingTwo">
-						<button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
-							data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
-							Kamyon Markaları
-						</button>
-					</h2>
-					<div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo"
-						data-bs-parent="#kamyonAccordion">
-						<div class="accordion-body">
-							<ul class="list-group">
-								<li class="list-group-item">Ford</li>
-								<li class="list-group-item">Mercedes-Benz</li>
-								<li class="list-group-item">MAN</li>
-							</ul>
-						</div>
+				<div class="accordion-item">
+					<button class="accordion-header">
+						FAQ Question 2 <span class="icon">+</span>
+					</button>
+					<div class="accordion-content">
+						<p>Answer to question 2...</p>
+					</div>
+				</div>
+				<div class="accordion-item">
+					<button class="accordion-header">
+						FAQ Question 3 <span class="icon">+</span>
+					</button>
+					<div class="accordion-content">
+						<p>Answer to question 3...</p>
 					</div>
 				</div>
 			</div>
+		
+
+			</div>
 		</div>
 	</section>
+	<script>document.querySelectorAll('.accordion-header').forEach(button => {
+		button.addEventListener('click', () => {
+			const accordionContent = button.nextElementSibling;
+	
+			button.classList.toggle('active');
+	
+			if (button.classList.contains('active')) {
+				accordionContent.style.maxHeight = accordionContent.scrollHeight + 'px';
+			} else {
+				accordionContent.style.maxHeight = 0;
+			}
+	
+			// Close other open accordion items
+			document.querySelectorAll('.accordion-header').forEach(otherButton => {
+				if (otherButton !== button) {
+					otherButton.classList.remove('active');
+					otherButton.nextElementSibling.style.maxHeight = 0;
+				}
+			});
+		});
+	});
+	</script>
 	<!-- End Accordion Area -->
 
 
