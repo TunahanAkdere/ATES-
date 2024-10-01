@@ -27,63 +27,97 @@
 	<link rel="stylesheet" href="css/footer.css">
 	<link rel="stylesheet" href="css/counter.css">
 	<link rel="stylesheet" href="css/akordiyon.css">
-<style>@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&display=swap');
+	<style>
+		@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&display=swap');
 
 
-	.accordion-container {
-		width: 80%;
-		max-width: 600px;
-	}
-	
-	.accordion-item {
-		background-color: #FFFFFF; /* White background for items */
-		border: 1px solid #E0E0E0; /* Light border */
-		border-radius: 8px;
-		margin-bottom: 10px;
-		box-shadow: 0 2px 5px rgba(0,0,0,0.1); /* Softer shadow */
-	}
-	
-	.accordion-header {
-		background-color: #6C63FF; /* Soft purple */
-		color: #FFFFFF; /* White text */
-		padding: 15px;
-		font-size: 18px;
-		border: none;
-		width: 100%;
-		text-align: left;
-		cursor: pointer;
-		outline: none;
-		display: flex;
-		justify-content: space-between;
-		align-items: center;
-		border-radius: 8px 8px 0 0;
-		transition: background-color 0.3s ease;
-	}
-	
-	.accordion-header:hover {
-		background-color: #5753C9; /* Darker shade of purple */
-	}
-	
-	.accordion-content {
-		background-color: #FAFAFA; /* Very light grey for content */
-		overflow: hidden;
-		padding: 0 15px;
-		max-height: 0;
-		transition: max-height 0.3s ease;
-	}
-	
-	.accordion-content p {
-		margin: 15px 0;
-		line-height: 1.5;
-	}
-	
-	.icon {
-		transition: transform 0.3s ease;
-	}
-	
-	.active .icon {
-		transform: rotate(45deg);
-	}
+		.accordion-container {
+			width: 100%;
+
+		}
+
+		.accordion-item {
+			background-color: #FFFFFF;
+			/* White background for items */
+			border: 1px solid #E0E0E0;
+			/* Light border */
+			border-radius: 8px;
+			margin-bottom: 10px;
+			box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+			/* Softer shadow */
+		}
+
+		.accordion-header {
+			background-color: #a52626;
+			/* Soft purple */
+			color: #FFFFFF;
+			/* White text */
+			padding: 15px;
+			font-size: 18px;
+			border: none;
+			width: 100%;
+			text-align: left;
+			cursor: pointer;
+			outline: none;
+			display: flex;
+			justify-content: space-between;
+			align-items: center;
+			border-radius: 8px 8px 0 0;
+			transition: background-color 0.3s ease;
+		}
+
+		.accordion-header:hover {
+			background-color: #771c1c;
+		}
+
+		.accordion-content {
+			background-color: #ffffff;
+			/* Very light grey for content */
+			overflow: hidden;
+			padding: 0 15px;
+			max-height: 0;
+			transition: max-height 0.3s ease;
+		}
+
+		.accordion-content p {
+			margin: 15px 0;
+			line-height: 1.5;
+		}
+
+		.icon {
+			transition: transform 0.3s ease;
+		}
+
+		.active .icon {
+			transform: rotate(45deg);
+		}
+
+
+		/* Tablo Stilleri */
+		.accordion-table {
+			width: 100%;
+			border-collapse: collapse;
+			margin-top: 15px;
+		}
+
+		.accordion-table th,
+		.accordion-table td {
+			padding: 8px;
+			text-align: left;
+			color: #000000;
+			/* Soldan hizala */
+		}
+
+		.accordion-table th {
+			color: #771c1c;
+			background-color: #ffffff;
+			/* Başlıklar için hafif gri arka plan */
+		}
+
+		.accordion-table tr:hover {
+			background-color: #f1f1f1;
+			/* Hover efekti için arka plan rengi */
+		}
 	</style>
 </head>
 
@@ -186,59 +220,90 @@
 
 	<!-- Start Accordion Area -->
 	<section class="offer-area relative">
-		<div class="container">
+		<div style="margin-top: -200px;" class="container">
 			<div class="accordion-container">
 				<div class="accordion-item">
 					<button class="accordion-header">
-						FAQ Question 1 <span class="icon">+</span>
+						İŞ MAKİNELERİ <span class="icon">+</span>
 					</button>
 					<div class="accordion-content">
-						<p>Answer to question 1...</p>
+						<table class="accordion-table">
+							<thead>
+								<tr>
+									<th>Marka</th>
+									<th>Model</th>
+									<th>Yıl</th>
+								</tr>
+							</thead>
+							<tbody>
+								<tr>
+									<td>Toyota</td>
+									<td>Corolla</td>
+									<td>2020</td>
+								</tr>
+								<tr>
+									<td>Honda</td>
+									<td>Civic</td>
+									<td>2021</td>
+								</tr>
+							</tbody>
+						</table>
 					</div>
 				</div>
 				<div class="accordion-item">
 					<button class="accordion-header">
-						FAQ Question 2 <span class="icon">+</span>
+						ARAÇLAR <span class="icon">+</span>
 					</button>
 					<div class="accordion-content">
-						<p>Answer to question 2...</p>
+						<table class="accordion-table">
+							<thead>
+								<tr>
+									<th>Marka</th>
+									<th>Model</th>
+									<th>Yıl</th>
+								</tr>
+							</thead>
+							<tbody>
+								<tr>
+									<td>Ford</td>
+									<td>Focus</td>
+									<td>2019</td>
+								</tr>
+								<tr>
+									<td>Chevrolet</td>
+									<td>Malibu</td>
+									<td>2018</td>
+								</tr>
+							</tbody>
+						</table>
 					</div>
 				</div>
-				<div class="accordion-item">
-					<button class="accordion-header">
-						FAQ Question 3 <span class="icon">+</span>
-					</button>
-					<div class="accordion-content">
-						<p>Answer to question 3...</p>
-					</div>
-				</div>
-			</div>
-		
-
 			</div>
 		</div>
 	</section>
+
+
 	<script>document.querySelectorAll('.accordion-header').forEach(button => {
-		button.addEventListener('click', () => {
-			const accordionContent = button.nextElementSibling;
-	
-			button.classList.toggle('active');
-	
-			if (button.classList.contains('active')) {
-				accordionContent.style.maxHeight = accordionContent.scrollHeight + 'px';
-			} else {
-				accordionContent.style.maxHeight = 0;
-			}
-	
-			// Close other open accordion items
-			document.querySelectorAll('.accordion-header').forEach(otherButton => {
-				if (otherButton !== button) {
-					otherButton.classList.remove('active');
-					otherButton.nextElementSibling.style.maxHeight = 0;
+			button.addEventListener('click', () => {
+				const accordionContent = button.nextElementSibling;
+
+				button.classList.toggle('active');
+
+				if (button.classList.contains('active')) {
+					accordionContent.style.maxHeight = accordionContent.scrollHeight + 'px';
+				} else {
+					accordionContent.style.maxHeight = 0;
 				}
+
+				// Close other open accordion items
+				document.querySelectorAll('.accordion-header').forEach(otherButton => {
+					if (otherButton !== button) {
+						otherButton.classList.remove('active');
+						otherButton.nextElementSibling.style.maxHeight = 0;
+					}
+				});
 			});
 		});
-	});
 	</script>
 	<!-- End Accordion Area -->
 
