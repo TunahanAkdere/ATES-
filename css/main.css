@@ -105,6 +105,59 @@ a:hover {
   background: #f9f9ff;
 }
 
+/*TOP HEADER*/
+.top-bar {
+  background-color: #000000;
+  /* Şeritin rengi */
+  padding: 10px 0;
+  color: rgb(255, 255, 255);
+  font-size: 14px;
+}
+
+.top-bar p {
+  margin: 0;
+  line-height: 1.5;
+  /* Satırlar arası boşluk */
+}
+
+.top-bar i {
+  margin-right: 5px;
+}
+
+.containerTOP {
+  max-width: 1200px;
+  /* İstediğiniz genişlik */
+  margin: 0 auto;
+  /* Ortalamak için */
+  padding: 0 15px;
+  /* Yanlardan boşluk eklemek için */
+}
+
+.rowTOP {
+  display: flex;
+  /* Flexbox kullanarak yan yana yerleşim */
+  flex-wrap: wrap;
+  /* Taşma durumunda taşımak için */
+}
+
+.col-md-6top {
+  flex: 0 0 50%;
+  /* Her biri %50 genişlikte olacak şekilde ayarla */
+  max-width: 50%;
+  /* Max genişlik ayarı */
+}
+
+@media (max-width: 768px) {
+  .col-md-6top {
+    flex: 0 0 100%;
+    /* Mobilde %100 genişlik */
+    max-width: 100%;
+    /* Max genişlik ayarı */
+    text-align: center !important;
+    /* Mobilde ortala */
+  }
+}
+
 h1,
 h2,
 h3,
