@@ -116,6 +116,70 @@
 			border-radius: 15px;
 			/* Köşeleri yuvarla */
 		}
+
+		@media only screen and (max-width: 768px) {
+			.timeline-item {
+				flex-direction: column;
+				/* Mobilde yönlendirmeyi dikey yap */
+			}
+		}
+
+		@media (max-width: 768px) {
+			.about-left {
+				order: 2;
+				/* Resmi ikinci sıraya alır */
+				margin-top: 0;
+				/* Üst boşluğu kaldırır */
+			}
+
+			.about-right {
+				order: 1;
+				/* Başlık ve metni birinci sıraya alır */
+				margin-top: 0;
+				/* Üst boşluğu kaldırır */
+			}
+
+			.section-title h2 {
+				font-size: 1.8rem;
+				/* Mobilde daha küçük bir başlık boyutu */
+			}
+
+			.section-title h3 {
+				font-size: 1.4rem;
+				/* Alt başlığı küçült */
+			}
+
+			iframe {
+				width: 100%;
+				/* Video boyutunu mobilde optimize eder */
+				height: auto;
+				/* Video yüksekliğini ekrana göre otomatik ayarlar */
+			}
+
+			img {
+				width: 100%;
+				/* Resimleri mobilde genişliğe uygun hale getirir */
+				height: auto;
+			}
+
+			.timeline-content p {
+				font-size: 14px;
+				/* Mobilde daha okunabilir bir metin boyutu */
+			}
+
+			.section-title {
+				margin-top: 20px;
+				/* Üst boşluk ekleyerek görsellerin üst üste binmesini engeller */
+			}
+
+			.about-left img:last-child {
+				height: 300px;
+				/* İstediğiniz yüksekliği burada ayarlayabilirsiniz */
+				object-fit: cover;
+				/* Resmin orantılı olarak kesilmesini sağlar */
+			}
+
+		}
 	</style>
 
 </head>
@@ -206,14 +270,16 @@
 
 	<!-- Start About Area -->
 	<section class="about-area section-gap-bottom">
-		<div class="container" style="margin-bottom: -20px;">
+
+		<div class="container" style="margin-bottom: -200px;">
+
 			<div class="row align-items-center justify-content-center">
+
 				<div class="section-title text-left mb-4">
 					<h3 style="color: #831919; font-weight: 600; text-align: center;">ATEŞ İNŞAAT</h3>
 					<h2 style="font-size: 2.5rem; font-weight: 700; text-align: center;">Güven ve Kalite ile Geleceği
 						İnşa Ediyoruz</h2>
 				</div>
-
 				<div class="col-lg-7 col-md-12 about-left mb-4" style="margin-top: -100px;">
 					<!-- YouTube videosu yerleştirildi -->
 					<iframe width="630" height="315" src="https://www.youtube.com/embed/RrO0RZv49lA?si=B8kdOW-IaQlxlZWw"

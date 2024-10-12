@@ -111,6 +111,63 @@
 			border-radius: 15px;
 			/* Köşeleri yuvarla */
 		}
+
+		@media (max-width: 768px) {
+			.about-left {
+				order: 2;
+				/* Resmi ikinci sıraya alır */
+				margin-top: 0;
+				/* Üst boşluğu kaldırır */
+			}
+
+			.about-right {
+				order: 1;
+				/* Başlık ve metni birinci sıraya alır */
+				margin-top: 0;
+				/* Üst boşluğu kaldırır */
+			}
+
+			.section-title h2 {
+				font-size: 1.8rem;
+				/* Mobilde daha küçük bir başlık boyutu */
+			}
+
+			.section-title h3 {
+				font-size: 1.4rem;
+				/* Alt başlığı küçült */
+			}
+
+			iframe {
+				width: 100%;
+				/* Video boyutunu mobilde optimize eder */
+				height: auto;
+				/* Video yüksekliğini ekrana göre otomatik ayarlar */
+			}
+
+			img {
+				width: 100%;
+				/* Resimleri mobilde genişliğe uygun hale getirir */
+				height: auto;
+			}
+
+			.timeline-content p {
+				font-size: 14px;
+				/* Mobilde daha okunabilir bir metin boyutu */
+			}
+
+			.section-title {
+				margin-top: 20px;
+				/* Üst boşluk ekleyerek görsellerin üst üste binmesini engeller */
+			}
+
+			.about-left img:last-child {
+				height: 300px;
+				/* İstediğiniz yüksekliği burada ayarlayabilirsiniz */
+				object-fit: cover;
+				/* Resmin orantılı olarak kesilmesini sağlar */
+			}
+
+		}
 	</style>
 
 </head>
