@@ -1396,6 +1396,11 @@ th {
   background-size: cover;
 }
 
+.banner-area {
+  background: url(../img/img/ates-insaat-15.jpg) no-repeat;
+  background-size: cover;
+}
+
 .banner-areaContact {
   background-size: cover;
   background-color: #000;
