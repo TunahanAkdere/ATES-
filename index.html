@@ -30,17 +30,152 @@
 			max-width: 140%;
 
 		}
+
+		.top-bar {
+			background-color: #000000;
+			/* Şeritin rengi */
+			padding: 10px 0;
+			color: rgb(255, 255, 255);
+			font-size: 14px;
+		}
+
+		.top-bar p {
+			margin: 0;
+			line-height: 1.5;
+			/* Satırlar arası boşluk */
+		}
+
+		.top-bar i {
+			margin-right: 5px;
+		}
+
+		.containerTOP {
+			max-width: 1200px;
+			/* İstediğiniz genişlik */
+			margin: 0 auto;
+			/* Ortalamak için */
+			padding: 0 15px;
+			/* Yanlardan boşluk eklemek için */
+		}
+
+		.rowTOP {
+			display: flex;
+			/* Flexbox kullanarak yan yana yerleşim */
+			flex-wrap: wrap;
+			/* Taşma durumunda taşımak için */
+		}
+
+		.col-md-6top {
+			flex: 0 0 50%;
+			/* Her biri %50 genişlikte olacak şekilde ayarla */
+			max-width: 50%;
+			/* Max genişlik ayarı */
+		}
+
+
+		@media (max-width: 768px) {
+			.col-md-6top {
+				flex: 0 0 100%;
+				/* Mobilde %100 genişlik */
+				max-width: 100%;
+				/* Max genişlik ayarı */
+				text-align: center !important;
+				/* Mobilde ortala */
+			}
+		}
+
+		.scroll-indicator {
+			text-align: center;
+			margin-top: 20px;
+			/* Üstten boşluk ekle */
+			display: flex;
+			/* Flexbox ile hizalama yap */
+			flex-direction: column;
+			/* Dikey hizalama */
+			align-items: center;
+			/* Ortada hizala */
+		}
+
+		.scroll-icon {
+			font-size: 40px;
+			/* Emoji boyutunu ayarla */
+			animation: bounce 1.5s infinite;
+			/* Sarkaç animasyonu ekle */
+		}
+
+		.scroll-text {
+			font-size: 16px;
+			/* Metin boyutu */
+			color: #fff;
+			/* Metin rengi beyaz */
+			margin-top: 5px;
+			/* Metin ile emoji arasında boşluk */
+			font-weight: 600;
+			/* Metin kalınlığı */
+		}
+
+		/* Sarkaç animasyonu */
+		@keyframes bounce {
+
+			0%,
+			20%,
+			50%,
+			80%,
+			100% {
+				transform: translateY(0);
+				/* Başlangıç pozisyonu */
+			}
+
+			40% {
+				transform: translateY(-10px);
+				/* Yukarıya hareket */
+			}
+
+			60% {
+				transform: translateY(-5px);
+				/* Aşağıya geri hareket */
+			}
+		}
 	</style>
 </head>
 
 <body>
+	<!-- TOP Header Area -->
+
+	<div class="top-bar">
+		<div class="containerTOP">
+			<div class="rowTOP">
+				<div class="col-md-6top">
+					<p>
+						<a href="contact.html" style="color: inherit; text-decoration: none;">
+							<i class="fa fa-map-marker"></i>
+							Kavaklıdere/Çankaya - Ankara, Türkiye
+							<br>
+							Kazım Özalp Mahalesi Rabat Sokak No: 24 / 3
+						</a>
+					</p>
+
+				</div>
+				<div class="col-md-6top" style="margin-top: 10px; text-align: right;">
+					<p>
+						<a href="contact.html" style="color: inherit; text-decoration: none;">
+							<i class="fa fa-phone"></i>
+							(PBX) +90 (312) 491 69 12
+						</a>
+					</p>
+				</div>
+			</div>
+		</div>
+	</div>
+
+
 
 	<!-- Start Header Area -->
 	<header class="default-header">
 		<nav class="navbar navbar-expand-lg navbar-light">
 			<div class="container">
 				<a class="navbar-brand" href="index.html">
-					<img src="img/img/ates-insaat-logo.png" alt="" width="200PX">
+					<img src="img/img/ates-insaat-logo.png" alt="" width="200px">
 				</a>
 				<button class="navbar-toggler" type="button" data-toggle="collapse"
 					data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
@@ -109,8 +244,12 @@
 						İNŞAAT
 					</h1>
 					<a href="about.html" class="primary-btn">Hakkımızda</a>
+
 				</div>
+
 			</div>
+
+
 		</div>
 		<div class="head-bottom-meta">
 			<div class="d-flex meta-left no-padding">
@@ -137,9 +276,10 @@
 					</div>
 					<div>
 						<p>
-							Face male he light it moveth darkness winged eveni seas after life every gathering is forth
-							two kind lesser i
-							from seas him open him From creepeth after, life is above image from replenish behold great
+							Ateş İnşaat, 20 Şubat 1973 tarihinde Abdullah Ateş tarafından şahıs şirketi olarak
+							kurulmuştur. Kuruluşundan bu yana, çeşitli altyapı projeleri, özellikle içme suyu ve
+							kanalizasyon işleri yapmıştır. 27 Mart 1987'de Limited Şirkete dönüşmüş ve 23 Mayıs 2016'da
+							Anonim Şirket olmuştur.
 						</p>
 					</div>
 					<a href="about.html" class="primary-btn">Daha Fazlası</a>

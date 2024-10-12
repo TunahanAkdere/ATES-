@@ -93,8 +93,9 @@ ul {
   margin-bottom: 25px;
 }
 .footer-content .logo-widget .text p {
-  color: #9ea0a9;
+  color: #dddddf;
   margin-bottom: 32px;
+  text-align: justify;
 }
 .footer-content .footer-title {
   position: relative;

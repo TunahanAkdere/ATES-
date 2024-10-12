@@ -1343,6 +1343,11 @@ th {
   background-size: cover;
 }
 
+.banner-areaContact {
+  background-size: cover;
+  background-color: #000;
+}
+
 .banner-area2 {
   background: url(../img/img/atesABOUT.png) no-repeat;
   background-size: cover;
