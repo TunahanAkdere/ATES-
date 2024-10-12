@@ -1,0 +1,88 @@
+/* VVV Everything you need VVV */
+
+#scroll-down-animation {
+  position: absolute;
+  top: 50%; /* Ekranın ortasında olacak şekilde ayarlanır */
+  left: 90%; /* Sağdan 10% boşluk bırakır */
+  transform: translate(50%, -50%); /* Y ekseninde ortalar */
+  z-index: 5; /* Navbarın üstünde kalması için z-index ayarı */
+}
+
+.mouse {
+  margin: 0 auto;
+  display: block;
+  border-radius: 50px;
+  border: 3px solid #fff;
+  height: 100px;
+  width: 50px;
+  position: relative;
+}
+
+.move {
+  position: absolute;
+  background-color: #fff;
+  height: 10px;
+  width: 10px;
+  border-radius: 50%;
+  left: 50%;
+  transform: translateX(-50%);
+  animation: move 2s linear infinite;
+}
+
+@keyframes move {
+  0% {
+    transform: translate(-50%, 10px);
+    opacity: 0;
+  }
+  50% {
+    transform: translate(-50%, 40px);
+    opacity: 1;
+  }
+  100% {
+    transform: translate(-50%, 80px);
+    opacity: 0;
+  }
+}
+
+/* Responsive Media Queries */
+@media (max-width: 1024px) {
+  #scroll-down-animation {
+    left: 85%; /* Orta boyutlu ekranlar için ayar */
+  }
+
+  h2 {
+    font-size: 15px; /* Orta boyutlu ekranlar için daha küçük font */
+  }
+}
+
+@media (max-width: 768px) {
+  #scroll-down-animation {
+    left: 80%; /* Daha geniş boşluk */
+    top: 50%; /* Yüksekliği koruyarak daha iyi görünüm sağlar */
+  }
+
+  .mouse {
+    height: 80px; /* Daha küçük bir boyut */
+    width: 40px;
+  }
+
+  h2 {
+    font-size: 14px; /* Daha küçük bir font boyutu */
+  }
+}
+
+@media (max-width: 480px) {
+  #scroll-down-animation {
+    top: 60%; /* Ekranın alt kısmına daha yakın */
+    left: 44%; /* Sağdan daha fazla boşluk */
+  }
+
+  .mouse {
+    height: 60px; /* Daha da küçük boyut */
+    width: 30px;
+  }
+
+  h2 {
+    font-size: 12px; /* Çok daha küçük bir font boyutu */
+  }
+}
