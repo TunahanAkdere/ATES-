@@ -25,6 +25,35 @@
 	<link rel="stylesheet" href="css/nice-select.css">
 	<link rel="stylesheet" href="css/main.css">
 	<link rel="stylesheet" href="css/footer.css">
+<style>/* Sayfa genel stilini ayarlıyoruz */
+	/* Sayfa genel stilini ayarlıyoruz */
+html, body {
+    height: 100%;
+
+}
+
+.page-wrapper {
+    display: flex;
+    flex-direction: column;
+    min-height: 80%;  /* Sayfa içeriği ve footer'ı kapsayacak kadar yüksek */
+}
+
+main {
+    flex: 1;  /* Sayfa içeriği kısmı flex-grow yaparak esnek olmasını sağlıyoruz */
+}
+
+footer {
+    margin-top: auto; /* Footer'ı en alta itiyoruz */
+}
+
+
+
+.footer-bottom {
+
+    text-align: center;
+}
+
+	</style>
 </head>
 
 <body>
@@ -101,8 +130,8 @@
 
 
 	<!-- Start Align Area -->
-	<section class="whole-wrap">
-		<div class="container">
+	<section class="whole-wrap" >
+		<div class="container" >
 			<div class="section-top-border">
 				<h1 style="text-align: center;">GALERİ</h1>
 				<div class="row gallery-item">
@@ -154,82 +183,80 @@
 							</div>
 						</a>
 					</div>
+					
 				</div>
 			</div>
 		</div>
 	</section>
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.3/js/lightbox-plus-jquery.min.js"></script>
 	<!-- End Align Area -->
-
-	<!-- FOOTER Area -->
-	<footer class="main-footer">
-		<div class="container">
-			<div class="footer-content">
-				<div class="row">
-					<div class="col-lg-4 col-md-6 col-sm-12 footer-column">
-						<div class="logo-widget footer-widget">
-							<figure class="logo-box"><a href="#"><img src="img/img/ates-insaat-logo.png" alt="logo"></a>
-							</figure>
-							<div class="text">
-								<p>Ateş İnşaat, 1979’dan beri altyapı, yol yapımı, elektrik ve doğalgaz sistemlerinde
-									kalite ve güveni en ön planda tutarak, Türkiye'nin refahına katkı sağlamak amacıyla
-									yurt içi ve yurt dışındaki projeleriyle hizmet vermektedir.
-								</p>
+	<div class="page-wrapper" >
+		<!-- Sayfa içeriği buraya gelecek -->
+		<footer class="main-footer">
+			<div class="container">
+				<div class="footer-content">
+					<div class="row">
+						<div class="col-lg-4 col-md-6 col-sm-12 footer-column">
+							<div class="logo-widget footer-widget">
+								<figure class="logo-box"><a href="#"><img src="img/img/ates-insaat-logo.png" alt="logo"></a></figure>
+								<div class="text">
+									<p>Ateş İnşaat, 1979’dan beri altyapı, yol yapımı, elektrik ve doğalgaz sistemlerinde kalite ve güveni en ön planda tutarak, Türkiye'nin refahına katkı sağlamak amacıyla yurt içi ve yurt dışındaki projeleriyle hizmet vermektedir.</p>
+								</div>
+								<ul class="footer-social">
+									<li><a href="#"><i class="fa fa-facebook-f"></i></a></li>
+									<li><a href="#"><i class="fa fa-twitter"></i></a></li>
+									<li><a href="#"><i class="fa fa-instagram"></i></a></li>
+									<li><a href="#"><i class="fa fa-linkedin"></i></a></li>
+								</ul>
 							</div>
-							<ul class="footer-social">
-								<li><a href="#"><i class="fa fa-facebook-f"></i></a></li>
-								<li><a href="#"><i class="fa fa-twitter"></i></a></li>
-								<li><a href="#"><i class="fa fa-instagram"></i></a></li>
-								<li> <a href="#"><i class="fa fa-linkedin"></i></a></li>
-							</ul>
 						</div>
-					</div>
-					<div class="col-lg-3 col-md-6 col-sm-12 offset-lg-2 footer-column">
-						<div class="service-widget footer-widget">
-							<div class="footer-title">Site Haritası</div>
-							<ul class="list">
-								<li><a href="index.html">Anasayfa</a></li>
-								<li><a href="about.html">Hakkımızda</a></li>
-								<li><a href="projects.html">Projeler</a></li>
-								<li><a href="makineParki.html">Makine Parkı</a></li>
-								<li><a href="galeri.html">Galeri</a></li>
-								<li><a href="contact.html">İletişim</a></li>
-							</ul>
+						<div class="col-lg-3 col-md-6 col-sm-12 offset-lg-2 footer-column">
+							<div class="service-widget footer-widget">
+								<div class="footer-title">Site Haritası</div>
+								<ul class="list">
+									<li><a href="index.html">Anasayfa</a></li>
+									<li><a href="about.html">Hakkımızda</a></li>
+									<li><a href="projects.html">Projeler</a></li>
+									<li><a href="makineParki.html">Makine Parkı</a></li>
+									<li><a href="galeri.html">Galeri</a></li>
+									<li><a href="contact.html">İletişim</a></li>
+								</ul>
+							</div>
 						</div>
-					</div>
-					<div class="col-lg-3 col-md-6 col-sm-12 footer-widget">
-						<div class="contact-widget footer-widget">
-							<div class="footer-title">İletişim</div>
-							<div class="text">
-								<p>Kavaklıdere/Çankaya - Ankara,Türkiye <br> Kazım Özalp Mahalesi Rabat Sokak No: 24 / 3
-								</p>
-								<p>Telefon: <br>+90 (312) 491 69 12</p>
-								<p>Faks: <br> +90 (312) 491 69 26</p>
-								<p>info@atesinsaat.com</p>
+						<div class="col-lg-3 col-md-6 col-sm-12 footer-widget">
+							<div class="contact-widget footer-widget">
+								<div class="footer-title">İletişim</div>
+								<div class="text">
+									<p>Kavaklıdere/Çankaya - Ankara,Türkiye <br> Kazım Özalp Mahalesi Rabat Sokak No: 24 / 3</p>
+									<p>Telefon: <br>+90 (312) 491 69 12</p>
+									<p>Faks: <br> +90 (312) 491 69 26</p>
+									<p>info@atesinsaat.com</p>
+								</div>
 							</div>
 						</div>
 					</div>
 				</div>
 			</div>
-		</div>
-	</footer>
-	<div class="footer-bottom">
-		<div class="container">
-			<div class="row">
-				<div class="col-lg-6 col-md-6 col-sm-12 column">
-					<div class="copyright"><a href="#">TU & AL</a> &copy;
-						<script>document.write(new Date().getFullYear());</script> Tüm Hakları Saklıdır.
+		</footer>
+		<div class="footer-bottom">
+			<div class="container">
+				<div class="row">
+					<div class="col-lg-6 col-md-6 col-sm-12 column">
+						<div class="copyright"><a href="#">TU & AL</a> &copy;
+							<script>document.write(new Date().getFullYear());</script> Tüm Hakları Saklıdır.
+						</div>
 					</div>
-				</div>
-				<div class="col-lg-6 col-md-6 col-sm-12 column">
-					<ul class="footer-nav">
-						<li><a href="#">Hizmet Şartları</a></li>
-						<li><a href="#">Gizlilik Politikası</a></li>
-					</ul>
+					<div class="col-lg-6 col-md-6 col-sm-12 column">
+						<ul class="footer-nav">
+							<li><a href="#">Hizmet Şartları</a></li>
+							<li><a href="#">Gizlilik Politikası</a></li>
+						</ul>
+					</div>
 				</div>
 			</div>
 		</div>
 	</div>
+	
 	<!-- FOOTER Area END -->
 
 	<script src="js/vendor/jquery-2.2.4.min.js"></script>
