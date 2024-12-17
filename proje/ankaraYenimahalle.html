@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>Ateş İnşaat Projeler</title>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Favicon -->
+    <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon">
+
+    <!-- THEME CSS -->
+    <!-- Bootstrap -->
+    <link rel="stylesheet" href="plugins/bootstrap/css/bootstrap.min.css">
+    <!-- Themify -->
+    <link rel="stylesheet" href="plugins/themify/css/themify-icons.css">
+    <link rel="stylesheet" href="plugins/slick-carousel/slick-theme.css">
+    <link rel="stylesheet" href="plugins/slick-carousel/slick.css">
+    <!-- Slick Carousel -->
+    <link rel="stylesheet" href="plugins/owl-carousel/owl.carousel.min.css">
+    <link rel="stylesheet" href="plugins/owl-carousel/owl.theme.default.min.css">
+    <link rel="stylesheet" href="plugins/magnific-popup/magnific-popup.css">
+    <!-- Main stylesheet -->
+    <link rel="stylesheet" href="css/style.css">
+
+    <!-- Custom CSS for the Image Slider -->
+    <style>
+        .post-featured-image {
+            display: flex;
+            overflow: hidden;
+            position: relative;
+            width: 100%;
+        }
+
+        .post-featured-image img {
+            display: block;
+            width: 100%;
+            height: auto;
+            transition: transform 0.5s ease-in-out;
+            flex: 0 0 auto;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        .slider-nav {
+            position: absolute;
+            top: 50%;
+            transform: translateY(-50%);
+            background-color: rgba(0, 0, 0, 0.5);
+            color: white;
+            border: none;
+            padding: 10px;
+            cursor: pointer;
+            z-index: 1;
+            font-size: 24px;
+            border-radius: 50%;
+            transition: background-color 0.3s;
+        }
+
+        .slider-nav:hover {
+            background-color: rgba(0, 0, 0, 0.8);
+        }
+
+        .prev {
+            left: 10px;
+        }
+
+        .next {
+            right: 10px;
+        }
+    </style>
+</head>
+
+<body>
+
+    
+    <section class="single-block-wrapper section-padding">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-lg-10 col-md-10 col-sm-12 col-xs-12">
+                    <div class="single-post">
+                        <div class="post-header mb-5 text-center">
+                            <div class="meta-cat">
+                                <a class="post-category font-extra text-color text-uppercase font-sm letter-spacing-1 " href="#" style="color: #a52626;">İl </a>
+                                <a class="post-category font-extra text-color text-uppercase font-sm letter-spacing-1" href="#" style="color: #a52626   ;">İlçe</a>
+                            </div>
+                            <h2 class="post-title mt-2">Yenimahalle - Ankara</h2>
+
+                        
+                            
+                            <video width="640" height="360" controls>
+                                <source src="../IMG_4794.MOV" type="video/mp4">
+                                Tarayıcınız bu videoyu desteklemiyor.
+                            </video>
+                        </div>
+                        <div class="post-body">
+                            <div class="entry-content">
+                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi ea inventore suscipit harum libero dolorum nisi ducimus magnam ipsam assumenda!</p>
+                                <p>The Sagoths had begun to take notice of his habit of declaiming throughout entire marches...</p>
+                                <blockquote>
+                                    <i class="ti-quote-left mr-2"></i>A wise girl knows her limit to touch the sky. Repellat sapiente neque iusto praesentium adipisci. <i class="ti-quote-right ml-2"></i>
+                                </blockquote>
+
+                                <div class="row">
+                                    <div class="col-lg-6 col-md-6">
+                                        <img src="../img/img/ates-insaat-06.jpg" alt="post-ads" class="img-fluid mr-4 w-100">
+                                    </div>
+                                    <div class="col-lg-6 col-md-6">
+                                        <img src="../img/img/ates-insaat-07.jpg" alt="post-ads" class="img-fluid mr-4 w-100">
+                                    </div>
+                                </div>
+                                <h3 class="mt-5 mb-3"></h3>
+                               
+                            </div>
+                       
+                        </div>
+                    </div>
+
+                    <div class="post-author d-flex my-5">
+               
+                    </div>
+
+                  
+
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- JavaScript -->
+    <script>
+        document.addEventListener("DOMContentLoaded", function() {
+            const images = document.querySelectorAll('.post-featured-image img');
+            const prevButton = document.querySelector('.slider-nav.prev');
+            const nextButton = document.querySelector('.slider-nav.next');
+            let currentIndex = 0;
+            const intervalTime = 4000; // 4 saniye
+    
+            function showImage(index) {
+                images.forEach((img, i) => {
+                    img.style.transform = `translateX(-${index * 100}%)`;
+                });
+            }
+    
+            function nextImage() {
+                currentIndex = (currentIndex < images.length - 1) ? currentIndex + 1 : 0;
+                showImage(currentIndex);
+            }
+    
+            prevButton.addEventListener('click', function() {
+                currentIndex = (currentIndex > 0) ? currentIndex - 1 : images.length - 1;
+                showImage(currentIndex);
+            });
+    
+            nextButton.addEventListener('click', function() {
+                nextImage();
+            });
+    
+            // Show the first image initially
+            showImage(currentIndex);
+    
+            // Automatically transition to the next image every 4 seconds
+            setInterval(nextImage, intervalTime);
+        });
+    </script>
+    
+</body>
+
+</html>
