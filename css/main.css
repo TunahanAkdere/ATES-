@@ -1619,7 +1619,7 @@ th {
 .offer-area:after {
   position: absolute;
   content: "";
-  top: 70px;
+
   left: 0;
   width: 36%;
   bottom: 70px;
