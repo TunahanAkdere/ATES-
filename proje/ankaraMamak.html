@@ -74,7 +74,7 @@
 
 <body>
 
-    
+
     <section class="single-block-wrapper section-padding">
         <div class="container">
             <div class="row justify-content-center">
@@ -83,39 +83,38 @@
                         <div class="post-header mb-5 text-center">
                             <h2 class="post-title mt-2">Mamak - Ankara</h2>
 
-                            <video width="640" height="360" controls>
-                                <source src="../IMG_4794.MOV" type="video/mp4">
-                                Tarayıcınız bu videoyu desteklemiyor.
-                            </video>
+                            <div class="post-featured-image mt-5">
+                                <img src="../AnkaraEtimesgut/IMG-20241224-WA0008.jpg" alt="featured-image-3">
+                            </div>
                         </div>
                         <div class="post-body">
                             <div class="entry-content">
-                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi ea inventore suscipit harum libero dolorum nisi ducimus magnam ipsam assumenda!</p>
-                                <p>The Sagoths had begun to take notice of his habit of declaiming throughout entire marches...</p>
-                                <blockquote>
-                                    <i class="ti-quote-left mr-2"></i>A wise girl knows her limit to touch the sky. Repellat sapiente neque iusto praesentium adipisci. <i class="ti-quote-right ml-2"></i>
-                                </blockquote>
-
+                                <p></p>
+                                <p></p>
+                                <p></p>
+                                <br>
                                 <div class="row">
                                     <div class="col-lg-6 col-md-6">
-                                        <img src="../img/img/ates-insaat-06.jpg" alt="post-ads" class="img-fluid mr-4 w-100">
+                                        <img src="../AnkaraEtimesgut/IMG-20241224-WA0003.jpg" alt="post-ads"
+                                            class="img-fluid mr-4 w-100">
                                     </div>
                                     <div class="col-lg-6 col-md-6">
-                                        <img src="../img/img/ates-insaat-07.jpg" alt="post-ads" class="img-fluid mr-4 w-100">
+                                        <img src="../AnkaraEtimesgut/IMG-20241224-WA0014.jpg" alt="post-ads"
+                                            class="img-fluid mr-4 w-100">
                                     </div>
                                 </div>
                                 <h3 class="mt-5 mb-3"></h3>
-                               
+
                             </div>
-                       
+
                         </div>
                     </div>
 
                     <div class="post-author d-flex my-5">
-               
+
                     </div>
 
-                  
+
 
                 </div>
             </div>
@@ -124,41 +123,41 @@
 
     <!-- JavaScript -->
     <script>
-        document.addEventListener("DOMContentLoaded", function() {
+        document.addEventListener("DOMContentLoaded", function () {
             const images = document.querySelectorAll('.post-featured-image img');
             const prevButton = document.querySelector('.slider-nav.prev');
             const nextButton = document.querySelector('.slider-nav.next');
             let currentIndex = 0;
             const intervalTime = 4000; // 4 saniye
-    
+
             function showImage(index) {
                 images.forEach((img, i) => {
                     img.style.transform = `translateX(-${index * 100}%)`;
                 });
             }
-    
+
             function nextImage() {
                 currentIndex = (currentIndex < images.length - 1) ? currentIndex + 1 : 0;
                 showImage(currentIndex);
             }
-    
-            prevButton.addEventListener('click', function() {
+
+            prevButton.addEventListener('click', function () {
                 currentIndex = (currentIndex > 0) ? currentIndex - 1 : images.length - 1;
                 showImage(currentIndex);
             });
-    
-            nextButton.addEventListener('click', function() {
+
+            nextButton.addEventListener('click', function () {
                 nextImage();
             });
-    
+
             // Show the first image initially
             showImage(currentIndex);
-    
+
             // Automatically transition to the next image every 4 seconds
             setInterval(nextImage, intervalTime);
         });
     </script>
-    
+
 </body>
 
 </html>
