@@ -30,7 +30,33 @@
 		.single-brand img {
 			max-width: 140%;
 
+
+
 		}
+
+		.responsive-logo {
+  display: block; /* Görselin hizalanması için gerekli olabilir */
+  max-width: 100%; /* Genişliği kapsayıcı elemanın %100'ünü geçmez */
+  height: auto; /* Oranlı şekilde yüksekliği ayarlar */
+  margin-top: -50px; /* Negatif margin kullanılabilir ama dikkatli olunmalı */
+}
+
+/* Mobil ekranlar için düzenleme */
+@media (max-width: 768px) {
+  .responsive-logo {
+    margin-top: -20px; /* Mobilde margin düzenleme */
+    height: 80px; /* Yüksekliği sabitlemek için */
+  }
+}
+
+/* Daha küçük ekranlar için */
+@media (max-width: 480px) {
+  .responsive-logo {
+    margin-top: 0; /* Negatif margin tamamen kaldırılabilir */
+    height: 60px; /* Daha küçük yükseklik */
+  }
+}
+
 	</style>
 </head>
 
@@ -69,10 +95,7 @@
 	<header class="default-header">
 		<nav class="navbar navbar-expand-lg navbar-light">
 			<div class="container">
-				<a class="navbar-brand" href="index.html">
-					<img src="img/img/ates-insaat-logo.png" alt="" width="200px">
-				</a>
-				<button class="navbar-toggler" type="button" data-toggle="collapse"
+,				<button class="navbar-toggler" type="button" data-toggle="collapse"
 					data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
 					aria-label="Toggle navigation">
 					<span class="fa fa-bars"></span>
@@ -132,9 +155,10 @@
 		<div class="container">
 			<div class="row fullscreen">
 				<div class="banner-content col-lg-12">
+					<br><br><br>
+					<img src="img/img/ates-insaat-logo.png" alt="Ateş İnşaat Logo" class="responsive-logo" style="height: 120px !important;">
 					<h1>
-						ATEŞ <br>
-						İNŞAAT
+						
 					</h1>
 					<a href="about.html" class="primary-btn">Hakkımızda</a>
 
@@ -151,6 +175,7 @@
 		</div>
 		<div id="scroll-down-animation">
 			<span class="mouse">
+				<br>
 				<span class="move"></span>
 			</span>
 		</div>
@@ -251,14 +276,14 @@
 					<div class="col-lg-4 grid-item col-md-6 all upcoming">
 						<div class="single-project">
 							<div class="relative">
-								<div class="thumb">
-									<img class="image img-fluid" src="img/projects/m2.jpg" alt="">
+								<div class="thumb" style="height: 350px;">
+									<img class="image img-fluid" src="AdiyamanMerkez/IMG-20241202-WA0004.jpg" alt="">
 								</div>
 								<div class="middle">
-									<h4>Bodrum, Muğla - Türkiye</h4>
+									<h4>Merkez, Adıyaman - Türkiye</h4>
 									<div class="cat">İnşaat, Üstyapı Çalışması</div>
 								</div>
-								<a class="overlay" href="muglaBodrum.html"></a>
+								<a class="overlay" href="adiyamanMerkez.html"></a>
 							</div>
 						</div>
 					</div>
@@ -313,54 +338,51 @@
 		<div class="container no-padding">
 			<div class="brand-wrap section-gap">
 				<div class="row align-items-center active-brand-carusel justify-content-start no-gutters">
-					<div class="col single-brand">
-						<a href="#"><img class="mx-auto" src="img/img/Referanslar/logo-abb.png" alt="logo-abb"></a>
+					<div class="col ">
+						<a href="#"><img class="" src="img/img/Referanslar/logo-abb.png" alt="logo-abb"></a>
 					</div>
-					<div class="col single-brand">
+					<div class="col ">
 						<a href="#"><img class="mx-auto" src="img/img/Referanslar/logo-ankara-valiligi.png"
 								alt="logo-ankara-valiligi"></a>
 					</div>
-					<div class="col single-brand">
+					<div class="col ">
 						<a href="#"><img class="mx-auto" src="img/img/Referanslar/logo-aski.png" alt="logo-aski"></a>
 					</div>
-					<div class="col single-brand">
+					<div class="col ">
 						<a href="#"><img class="mx-auto" src="img/img/Referanslar/logo-aso.png" alt="logo-aso"></a>
 					</div>
-					<div class="col single-brand">
+					<div class="col ">
 						<a href="#"><img class="mx-auto" src="img/img/Referanslar/logo-bursabb.png"
 								alt="logo-bursabb"></a>
 					</div>
-					<div class="col single-brand">
+					<div class="col ">
 						<a href="#"><img class="mx-auto" src="img/img/Referanslar/logo-buski.png" alt="logo-buski"></a>
 					</div>
-					<div class="col single-brand">
+					<div class="col ">
 						<a href="#"><img class="mx-auto" src="img/img/Referanslar/logo-cumhurbaskanligi.png"
 								alt="logo-cumhurbaskanligi"></a>
 					</div>
-					<div class="col single-brand">
+					<div class="col ">
 						<a href="#"><img class="mx-auto" src="img/img/Referanslar/logo-dsi.png" alt="logo-dsi"></a>
 					</div>
-					<div class="col single-brand">
+					<div class="col ">
 						<a href="#"><img class="mx-auto" src="img/img/Referanslar/logo-hab.png" alt="logo-hab"></a>
 					</div>
-					<div class="col single-brand">
+					<div class="col ">
 						<a href="#"><img class="mx-auto" src="img/img/Referanslar/logo-ilbank.png"
 								alt="logo-ilbank"></a>
 					</div>
-					<div class="col single-brand">
+					<div class="col ">
 						<a href="#"><img class="mx-auto" src="img/img/Referanslar/logo-cevresehircilik.png"
 								alt="logo-ilbank"></a>
 					</div>
-					<div class="col single-brand">
+					<div class="col ">
 						<a href="#"><img class="mx-auto" src="img/img/Referanslar/logo-kgm.png" alt="logo-kgm"></a>
 					</div>
-					<div class="col single-brand">
+					<div class="col ">
 						<a href="#"><img class="mx-auto" src="img/img/Referanslar/logo-meb.png" alt="logo-meb"></a>
 					</div>
-					<div class="col single-brand">
-						<a href="#"><img class="mx-auto" src="img/img/Referanslar/logo-sasad.png" alt="logo-sasad"></a>
-					</div>
-					<div class="col single-brand">
+					<div class="col ">
 						<a href="#"><img class="mx-auto" src="img/img/Referanslar/logo-ssb.png" alt="logo-ssb"></a>
 					</div>
 
