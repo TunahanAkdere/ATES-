@@ -76,10 +76,17 @@
 						<li>
 							<a href="aboutEn.html">ABOUT US</a>
 						</li>
-						<li><a class="active" href="projectsEn.html">Projects</a></li>
+						<li class="dropdown">
+							<a class="dropdown-toggle" href="#" id="navbardrop" data-toggle="dropdown">
+								Projects
+							</a>
+							<div class="dropdown-menu">
+								<a class="dropdown-item" href="projectsEn.html">Completed Projects</a>
+								<a class="dropdown-item" href="devamEdenProjelerEn.html">Ongoing Projects</a>
+							</div>
+						</li>
 						<li><a href="makineParkiEn.html">Machine Park</a></li>
 						<li><a href="galeriEn.html">Gallery</a></li>
-						<li><a href="blog-homeEn.html">Medıa</a></li>
 
 						<li><a href="contactEn.html">CONTACT</a></li>
 					</ul>
@@ -95,7 +102,7 @@
 	</header>
 	<!-- End Header Area -->
 
-	
+
 
 	<!-- Start top-section Area -->
 	<section style="background-color: #000000;">
@@ -117,11 +124,12 @@
 				<div class="col-lg-12">
 					<div class="filters mb-5">
 						<ul>
-							<li class="active" data-filter=".all">All</li>
 							<li data-filter=".popular">Ankara</li>
 							<li data-filter=".latest">Adıyaman</li>
 							<li data-filter=".following">Balıkesir</li>
 							<li data-filter=".upcoming">Muğla</li>
+
+
 						</ul>
 					</div>
 				</div>
@@ -130,69 +138,273 @@
 				<div class="row grid">
 					<div class="col-lg-4 col-md-6 grid-sizer"></div>
 
-					<div class="col-lg-4 col-md-6 grid-item all latest" data-wow-delay="0s">
-						<div class="single-project">
-							<div class="relative">
-								<div class="thumb">
-									<img class="image img-fluid" src="img/projects/p1.jpg" alt="">
+
+
+					<div class="col-lg-12 grid-item col-md-10 all latest">
+						<div class="single-project" style="height: 500px; position: relative;">
+							<div class="relative" style="height: 100%; position: relative;">
+								<div class="thumb" style="height: 70%; width: 100%;">
+									<img class="image img-fluid" src="img/projects/adiyamansudepo-hat/deposon.jpeg"
+										alt="" style="object-fit: cover; height: 100%; width: 100%; height: 500px;">
 								</div>
-								<div class="middle">
-									<h4>Adıyaman, Türkiye</h4>
-									<div class="cat">İnşaat, Yol Çalışması</div>
+								<div class="middle"
+									style="height: 30%; text-align: center; display: flex; flex-direction: column; justify-content: center;">
+									<h4>Gölbaşı, Adıyaman - Türkiye</h4>
+									<div class="cat">Altyapı, İçme Suyu Deposu Ve Kanalizasyon Çalışması </div>
 								</div>
-								<a class="overlay" href="#"></a>
+								<a class="overlay" href="adiyamanGolbasi.html"
+									style="position: absolute; top: 0; left: 0; right: 0; bottom: 0;"></a>
 							</div>
 						</div>
 					</div>
 
-					<div class="col-lg-8 grid-item col-md-6 all  following">
+					<div class="col-lg-8 grid-item col-md-6 all  latest">
 						<div class="single-project">
 							<div class="relative">
 								<div class="thumb">
-									<img class="image img-fluid" src="img/projects/p2.jpg" alt="">
+									<img class="image img-fluid" src="img/projects/adiyamancarsi/carsi1.jpeg" alt="">
 								</div>
 								<div class="middle">
-									<h4>Balıkesir, Türkiye</h4>
-									<div class="cat">İnşaat, Yol Çalışması</div>
+									<h4>Merkez, Adıyaman - Türkiye</h4>
+									<div class="cat"> Balıkesir Çarşısı</div>
 								</div>
-								<a class="overlay" href="#"></a>
+								<a class="overlay" href="adiyamanMerkez.html"></a>
 							</div>
 						</div>
 					</div>
 
-					<div class="col-lg-8 grid-item col-md-6 all popular">
-						<div class="single-project">
-							<div class="relative">
-								<div class="thumb">
-									<img class="image img-fluid" src="img/projects/p3.jpg" alt="">
-								</div>
-								<div class="middle">
-									<h4>Ankara, Türkiye</h4>
-									<div class="cat">İnşaat, Kanal Çalışması</div>
-								</div>
-								<a class="overlay" href="#"></a>
-							</div>
-						</div>
-					</div>
 
 					<div class="col-lg-4 grid-item col-md-6 all upcoming">
 						<div class="single-project">
 							<div class="relative">
 								<div class="thumb">
-									<img class="image img-fluid" src="img/projects/m2.jpg" alt="">
+									<img class="image img-fluid" src="img/projects/m2.jpg" alt="" style="height: 490px;">
 								</div>
 								<div class="middle">
-									<h4>Bodrum, Muğla, Türkiye</h4>
+									<h4>Bodrum, Muğla - Türkiye</h4>
 									<div class="cat">İnşaat, Üstyapı Çalışması</div>
 								</div>
-								<a class="overlay" href="#"></a>
+								<a class="overlay" href="muglaBodrum.html"></a>
+							</div>
+						</div>
+					</div>
+
+					
+
+					
+
+					
+
+
+					<div class="col-lg-12 grid-item col-md-6 all following">
+						<div class="single-project" style="height: 600px; position: relative;">
+							<div class="relative" style="height: 100%; position: relative;">
+								<div class="thumb" style="height: 75%; width: 100%;">
+									<img class="image img-fluid"
+										src="img/projects/balikesir-tastahkimat-dere-yol/Dere-Islahı.jpeg" alt=""
+										style="object-fit: cover; height: 120%; width: 100%;">
+								</div>
+								<div class="middle"
+									style="height: 25%; text-align: center; display: flex; flex-direction: column; justify-content: center;">
+									<h4>Edremit, Balıkesir - Türkiye</h4>
+									<div class="cat">Taş Tahkimat Dere Islahı Ve Yol Çalışması</div>
+								</div>
+								<a class="overlay" href="balikesirEdremit.html"
+									style="position: absolute; top: 0; left: 0; right: 0; bottom: 0;"></a>
+							</div>
+						</div>
+					</div>
+
+					
+
+					
+
+					<div class="col-lg-12 grid-item col-md-6 all following">
+						<div class="single-project">
+							<div class="relative">
+								<div class="thumb">
+								
+									<img class="image img-fluid"
+										src="BalıkesirMerkez/IMG-20241217-WA0049.jpg" alt=""
+										style="height: 540px;">
+								</div>
+								<div class="middle">
+									<h4>Merkez, Balıkesir - Türkiye</h4>
+									<div class="cat">Yol ve Tüm Altyapı İşleri</div>
+								</div>
+								<a class="overlay" href="balikesirMerkez.html"></a>
+							</div>
+						</div>
+					</div>
+
+					<div class="col-lg-12 grid-item col-md-6 all following">
+						<div class="single-project">
+							<div class="relative">
+								<div class="thumb">
+								
+									<img class="image img-fluid"
+										src="BalıkesirSavaştepe/p9.jpg" alt=""
+										style="height: 460px;">
+								</div>
+								<div class="middle">
+									<h4>Savaştepe, Balıkesir - Türkiye</h4>
+									<div class="cat">Altyapı, İçme Suyu- Sondaj Ve Su Deposu Çalışması</div>
+								</div>
+								<a class="overlay" href="balikesirSavastepe.html"></a>
+							</div>
+						</div>
+					</div>
+					
+					
+					<div class="col-lg-12 grid-item col-md-6 all popular">
+						<div class="single-project" style="height: 600px; position: relative;">
+							<div class="relative" style="height: 100%; position: relative;">
+								<div class="thumb" style="height: 75%; width: 100%;">
+									<img class="image img-fluid"
+										src="AnkaraEtimesgut/IMG-20241224-WA0008.jpg" alt=""
+										style="object-fit: cover; height: 120%; width: 100%;">
+								</div>
+								<div class="middle"
+									style="height: 25%; text-align: center; display: flex; flex-direction: column; justify-content: center;">
+									<h4>Mamak, Ankara - Türkiye</h4>
+									<div class="cat">Altyapı, Kanalizasyon Ve İçme Suyu Çalışması</div>
+								</div>
+								<a class="overlay" href="ankaraMamak.html"
+									style="position: absolute; top: 0; left: 0; right: 0; bottom: 0;"></a>
+							</div>
+						</div>
+					</div>
+
+					
+					<div class="col-lg-8 grid-item col-md-6 all popular">
+						<div class="single-project">
+							<div class="relative">
+								<div class="thumb">
+
+									<img class="image img-fluid"
+										src="AnkaraEtimesgut/IMG-20241224-WA0045.jpg" alt=""
+										style="height: 600px;">
+								</div>
+								<div class="middle">
+									<h4>Muhtelif İlçelerde, Ankara - Türkiye</h4>
+									<div class="cat">Dere Temizliği Ve Rehabilitasyon Çalışması</div>
+								</div>
+								<a class="overlay" href="ankaraMuhtelif2.html"></a>
+							</div>
+						</div>
+					</div>
+					
+					
+					
+
+					<div class="col-lg-4 grid-item col-md-6 all popular">
+						<div class="single-project" style="height: 400px; position: relative;">
+							<div class="relative" style="height: 100%; position: relative;">
+								<div class="thumb" style="height: 75%; width: 100%;">
+									<img class="image img-fluid"
+										src="AnkaraEtimesgut/IMG-20241224-WA0043.jpg" alt="">
+								</div>
+								<div class="middle"
+									style="height: 25%; text-align: center; display: flex; flex-direction: column; justify-content: center;">
+									<h4>Muhtelif İlçelerde, Ankara - Türkiye</h4>
+									<div class="cat">Büyük Ölçekli Yağmur Ve Suyu Izgara Yapım Çalışması</div>
+								</div>
+								<a class="overlay" href="ankaraMuhtelif1.html"
+									style="position: absolute; top: 0; left: 0; right: 0; bottom: 0;"></a>
+							</div>
+						</div>
+					</div>
+
+					<div class="col-lg-4 grid-item col-md-6 all popular">
+						<div class="single-project" style="height: 370px; position: relative; margin-top: -110px;">
+							<div class="relative" style="height: 100%; position: relative;">
+								<div class="thumb" style="height: 75%; width: 100%;">
+
+									<img class="image img-fluid"
+										src="AnkaraEtimesgut/IMG-20241224-WA0059.jpg" alt="">
+								</div>
+								<div class="middle"
+									style="height: 25%; text-align: center; display: flex; flex-direction: column; justify-content: center;">
+									<h4>Keçiören, Ankara - Türkiye</h4>
+									<div class="cat">Altyapı, Kanalizasyon Ve İçme Suyu Çalışması</div>
+								</div>
+								<a class="overlay" href="ankaraKecioren.html"
+								style="position: absolute; top: 0; left: 0; right: 0; bottom: 0;"></a>
+							</div>
+						</div>
+					</div>
+
+					<div class="col-lg-12 grid-item col-md-6 all popular">
+						<div class="single-project" >
+							<div class="relative" >
+								<div class="thumb" >
+									<img class="image img-fluid"
+										src="img/projects/ankara-cadde-sokakaltyapi/AnkaraMuhtelifCadde.jpeg" alt="" style="height: 700px;">
+								</div>
+								<div class="middle"
+									style="height: 25px; text-align: center; display: flex; flex-direction: column; justify-content: center; font-size: 12px;">
+									<h4 style="font-size: 16px;">Etimesgut İstasyon Caddesi, Ankara </h4>
+									<div class="cat">Kutu Kesiti 6x2.4 Baks Çalışması</div>
+								</div>
+								<a class="overlay" href="ankaraEtimesgut.html"></a>
+							</div>
+						</div>
+					</div>
+
+					<div class="col-lg-4 grid-item col-md-6 all popular" >
+						<div class="single-project" style="height: 600px; position: relative;"> 
+
+							<div class="relative" style="height: 100%; position: relative;">
+								<div class="thumb" style="height: 75%; width: 100%;">
+									<img class="image img-fluid" src="AnkaraEtimesgut/IMG-20241224-WA0056.jpg" alt=""
+										style="object-fit: cover; height: 120%; width: 100%;">
+								</div>
+								<div class="middle"
+									style="height: 25%; text-align: center; display: flex; flex-direction: column; justify-content: center;">
+									<h4>Altındağ, Ankara - Türkiye</h4>
+									<div class="cat">Altyapı, Kanalizasyon Ve İçme Suyu Çalışması</div>
+								</div>
+								<a class="overlay" href="ankaraAltindag.html"
+									style="position: absolute; top: 0; left: 0; right: 0; bottom: 0;"></a>
+							</div>
+						</div>
+					</div>
+					
+					<div class="col-lg-8 grid-item col-md-6 all popular">
+						<div class="single-project">
+							<div class="relative">
+								<div class="thumb">
+
+									<img class="image img-fluid" src="AnkaraEtimesgut/IMG-20241224-WA0027.jpg" alt=""
+										style="height: 540px;">
+								</div>
+								<div class="middle">
+									<h4>Çankaya, Ankara - Türkiye</h4>
+									<div class="cat">Altyapı, Kanalizasyon Ve İçme Suyu Çalışması</div>
+								</div>
+								<a class="overlay" href="ankaraCankaya.html"></a>
+							</div>
+						</div>
+					</div>
+
+
+					<div class="col-lg-12 grid-item col-md-6 all popular">
+						<div class="single-project">
+							<div class="relative">
+								<div class="thumb">
+									<img class="image img-fluid" src="AnkaraEtimesgut/IMG-20241224-WA0061.jpg" alt="" >
+								</div>
+								<div class="middle">
+									<h4>Yenimahalle, Ankara - Türkiye</h4>
+									<div class="cat">Altyapı İşletme Çalışması</div>
+								</div>
+								<a class="overlay" href="ankaraYenimahalle.html"></a>
 							</div>
 						</div>
 					</div>
 
 				</div>
 			</div>
-		</div>
 	</section>
 	<!-- End Project Area -->
 
@@ -238,7 +450,7 @@
 							<div class="footer-title">CONTACT</div>
 							<div class="text">
 								<p>Kavaklıdere/Çankaya - Ankara, Turkey <br> Kazım Özalp Neighborhood Rabat Street No:
-									24 
+									24
 								</p>
 								<p>Telefon: <br>+90 (312) 491 69 12</p>
 								<p>Faks: <br> +90 (312) 491 69 26</p>
