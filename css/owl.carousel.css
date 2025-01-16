@@ -14,6 +14,62 @@
   position: relative;
   z-index: 1;
 }
+
+.owl-carousel .owl-nav {
+  position: absolute;
+  top: 50%;
+  width: 100%;
+  transform: translateY(-50%);
+  display: flex;
+  justify-content: space-between;
+  pointer-events: none; /* Sadece okların tıklanabilir olmasını sağlar */
+}
+
+.owl-carousel .owl-nav button {
+  background-color: rgba(0, 0, 0, 0.5);
+  color: #fff;
+  border: none;
+  padding: 10px 15px;
+  border-radius: 50%;
+  font-size: 18px;
+  pointer-events: all; /* Tıklanabilirliği etkinleştirir */
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.owl-carousel .owl-nav button:hover {
+  background-color: rgba(0, 0, 0, 0.8);
+}
+
+.owl-carousel .owl-nav .owl-prev {
+  position: absolute;
+  left: 10px;
+}
+
+.owl-carousel .owl-nav .owl-next {
+  position: absolute;
+  right: 10px;
+}
+
+.owl-carousel .owl-dots {
+  text-align: center;
+  margin-top: 15px;
+}
+
+.owl-carousel .owl-dots .owl-dot {
+  width: 10px;
+  height: 10px;
+  margin: 5px;
+  background-color: #ccc;
+  display: inline-block;
+  border-radius: 50%;
+  transition: background-color 0.3s ease;
+}
+
+.owl-carousel .owl-dots .owl-dot.active {
+  background-color: #000;
+}
+
 .owl-carousel .owl-stage {
   position: relative;
   -ms-touch-action: pan-Y;
@@ -42,7 +98,7 @@
 }
 .owl-carousel .owl-item img {
   display: block;
-  width: 100%;
+  width: 110%;
   -webkit-transform-style: preserve-3d;
 }
 .owl-carousel .owl-nav.disabled,
