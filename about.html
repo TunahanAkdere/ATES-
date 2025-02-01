@@ -1,668 +1,530 @@
 <!DOCTYPE html>
 <html lang="zxx" class="no-js">
-  <head>
-    <!-- Mobile Specific Meta -->
-    <meta
-      name="viewport"
-      content="width=device-width, initial-scale=1, shrink-to-fit=no"
-    />
-    <!-- Favicon-->
-    <link rel="Shortcut Icon" type="image/ico" href="ates-insaat.png" />
-    <!-- Meta Keyword -->
-    <meta name="keywords" content="" />
-    <!-- meta character set -->
-    <meta charset="UTF-8" />
-    <!-- Site Title -->
-    <title>Ateş İnşaat</title>
 
-    <link
-      href="https://fonts.googleapis.com/css?family=Roboto+Condensed:300,400,700|Roboto:400,500"
-      rel="stylesheet"
-    />
-    <!--
+<head>
+  <!-- Mobile Specific Meta -->
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+  <!-- Favicon-->
+  <link rel="Shortcut Icon" type="image/ico" href="ates-insaat.png" />
+  <!-- Meta Keyword -->
+  <meta name="keywords" content="" />
+  <!-- meta character set -->
+  <meta charset="UTF-8" />
+  <!-- Site Title -->
+  <title>Ateş İnşaat</title>
+
+  <link href="https://fonts.googleapis.com/css?family=Roboto+Condensed:300,400,700|Roboto:400,500" rel="stylesheet" />
+  <!--
 			CSS
 			============================================= -->
-    <link rel="stylesheet" href="css/linearicons.css" />
-    <link rel="stylesheet" href="css/font-awesome.min.css" />
-    <link rel="stylesheet" href="css/bootstrap.css" />
-    <link rel="stylesheet" href="css/owl.carousel.css" />
-    <link rel="stylesheet" href="css/magnific-popup.css" />
-    <link rel="stylesheet" href="css/nice-select.css" />
-    <link rel="stylesheet" href="css/main.css" />
-    <link rel="stylesheet" href="css/footer.css" />
+  <link rel="stylesheet" href="css/linearicons.css" />
+  <link rel="stylesheet" href="css/font-awesome.min.css" />
+  <link rel="stylesheet" href="css/bootstrap.css" />
+  <link rel="stylesheet" href="css/owl.carousel.css" />
+  <link rel="stylesheet" href="css/magnific-popup.css" />
+  <link rel="stylesheet" href="css/nice-select.css" />
+  <link rel="stylesheet" href="css/main.css" />
+  <link rel="stylesheet" href="css/footer.css" />
 
-    <style>
-      .single-brand img {
-        max-width: 140%;
-      }
+  <style>
+    .single-brand img {
+      max-width: 140%;
+    }
 
-      .about-area {
-        padding: 60px 0;
-        background-color: #f9f9f9;
-        /* Açık gri arka plan */
-      }
+    .about-area {
+      padding: 60px 0;
+      background-color: #f9f9f9;
+      /* Açık gri arka plan */
+    }
 
-      .timeline {
-        position: relative;
-        max-width: 800px;
-        /* Zaman çizelgesinin maksimum genişliği */
-        margin: auto;
-        /* Merkeze yerleştirme */
-        padding: 20px 0;
-        /* Üst ve alt padding */
-      }
+    .timeline {
+      position: relative;
+      max-width: 800px;
+      /* Zaman çizelgesinin maksimum genişliği */
+      margin: auto;
+      /* Merkeze yerleştirme */
+      padding: 20px 0;
+      /* Üst ve alt padding */
+    }
 
+    .timeline-item {
+      display: flex;
+      /* Flexbox kullanımı */
+      margin: 20px 0;
+      /* Üst ve alt boşluklar */
+      padding: 20px;
+      /* İç boşluk */
+      background: #f1f1f1;
+      /* Beyaz arka plan */
+      border-radius: 15px;
+      /* Köşeleri yuvarla */
+      box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+      /* Hafif gölge efekti */
+    }
+
+    .timeline-content {
+      padding: 15px;
+      /* İç boşluk */
+      flex: 1;
+      /* Flex item genişliği */
+    }
+
+    .timeline-content p {
+      color: #000000;
+      font-weight: 500;
+    }
+
+    .timeline-item:nth-child(even) {
+      flex-direction: row-reverse;
+      /* Alternatif yönlendirme */
+    }
+
+    .section-title h3 {
+      text-align: justify;
+      /* Başlık metni */
+      margin-bottom: 10px;
+      /* Başlıklar arasına boşluk ekle */
+    }
+
+    .timeline-content p {
+      text-align: justify;
+      /* Paragraflar için metin ayarı */
+      margin-bottom: 20px;
+      /* Paragraflar arasına boşluk ekle */
+      color: #000000;
+      /* Metin rengi */
+    }
+
+    .date {
+      display: block;
+      /* Tarih için blok düzeni */
+      margin-top: 10px;
+      /* Üstten boşluk */
+      font-size: 16px;
+      font-weight: 600;
+      /* Yazı boyutu */
+      color: rgb(0, 0, 0);
+      /* Tarih rengi */
+    }
+
+    /* Görsel ayarları */
+    .single-brand img {
+      max-width: 100%;
+      /* Görsel genişliği, alanın dışına taşmasın */
+      border-radius: 15px;
+      /* Köşeleri yuvarla */
+    }
+
+    @media only screen and (max-width: 768px) {
       .timeline-item {
-        display: flex;
-        /* Flexbox kullanımı */
-        margin: 20px 0;
-        /* Üst ve alt boşluklar */
-        padding: 20px;
-        /* İç boşluk */
-        background: #f1f1f1;
-        /* Beyaz arka plan */
-        border-radius: 15px;
-        /* Köşeleri yuvarla */
-        box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
-        /* Hafif gölge efekti */
+        flex-direction: column;
+        /* Mobilde yönlendirmeyi dikey yap */
+      }
+    }
+
+    @media (max-width: 768px) {
+      .about-left {
+        order: 2;
+        /* Resmi ikinci sıraya alır */
+        margin-top: 0;
+        /* Üst boşluğu kaldırır */
       }
 
-      .timeline-content {
-        padding: 15px;
-        /* İç boşluk */
-        flex: 1;
-        /* Flex item genişliği */
+      .about-right {
+        order: 1;
+        /* Başlık ve metni birinci sıraya alır */
+        margin-top: 0;
+        /* Üst boşluğu kaldırır */
       }
 
-      .timeline-content p {
-        color: #000000;
-        font-weight: 500;
-      }
-
-      .timeline-item:nth-child(even) {
-        flex-direction: row-reverse;
-        /* Alternatif yönlendirme */
+      .section-title h2 {
+        font-size: 1.8rem;
+        /* Mobilde daha küçük bir başlık boyutu */
       }
 
       .section-title h3 {
-        text-align: justify;
-        /* Başlık metni */
-        margin-bottom: 10px;
-        /* Başlıklar arasına boşluk ekle */
+        font-size: 1.4rem;
+        /* Alt başlığı küçült */
       }
+
+      iframe {
+        width: 100%;
+        /* Video boyutunu mobilde optimize eder */
+        height: auto;
+        /* Video yüksekliğini ekrana göre otomatik ayarlar */
+      }
+
+      
 
       .timeline-content p {
-        text-align: justify;
-        /* Paragraflar için metin ayarı */
-        margin-bottom: 20px;
-        /* Paragraflar arasına boşluk ekle */
-        color: #000000;
-        /* Metin rengi */
+        font-size: 14px;
+        /* Mobilde daha okunabilir bir metin boyutu */
       }
 
-      .date {
-        display: block;
-        /* Tarih için blok düzeni */
-        margin-top: 10px;
-        /* Üstten boşluk */
-        font-size: 16px;
-        font-weight: 600;
-        /* Yazı boyutu */
-        color: rgb(0, 0, 0);
-        /* Tarih rengi */
+      .section-title {
+        margin-top: 20px;
+        /* Üst boşluk ekleyerek görsellerin üst üste binmesini engeller */
       }
 
-      /* Görsel ayarları */
-      .single-brand img {
-        max-width: 100%;
-        /* Görsel genişliği, alanın dışına taşmasın */
-        border-radius: 15px;
-        /* Köşeleri yuvarla */
+      .about-left img:last-child {
+        height: 300px;
+        /* İstediğiniz yüksekliği burada ayarlayabilirsiniz */
+        object-fit: cover;
+        /* Resmin orantılı olarak kesilmesini sağlar */
       }
+    }
+  </style>
+</head>
 
-      @media only screen and (max-width: 768px) {
-        .timeline-item {
-          flex-direction: column;
-          /* Mobilde yönlendirmeyi dikey yap */
-        }
-      }
+<body>
+  <!-- TOP Header Area -->
 
-      @media (max-width: 768px) {
-        .about-left {
-          order: 2;
-          /* Resmi ikinci sıraya alır */
-          margin-top: 0;
-          /* Üst boşluğu kaldırır */
-        }
+  <div class="top-bar">
+    <div class="containerTOP">
+      <div class="rowTOP">
+        <div class="col-md-6top">
+          <p>
+            <a href="contact.html" style="color: inherit; text-decoration: none">
+              <i class="fa fa-map-marker"></i>
+              Kavaklıdere/Çankaya - Ankara, Türkiye
+              <br />
+              Kazım Özalp Mahalesi Rabat Sokak No: 24
+            </a>
+          </p>
+        </div>
+        <div class="col-md-6top" style="margin-top: 10px; text-align: right">
+          <p>
+            <a href="contact.html" style="color: inherit; text-decoration: none">
+              <i class="fa fa-phone"></i>
+              (PBX) +90 (312) 491 69 12
+            </a>
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
 
-        .about-right {
-          order: 1;
-          /* Başlık ve metni birinci sıraya alır */
-          margin-top: 0;
-          /* Üst boşluğu kaldırır */
-        }
+  <!-- Start Header Area -->
+  <header class="default-header">
+    <nav class="navbar navbar-expand-lg navbar-light">
+      <div class="container">
+        <a class="navbar-brand" href="index.html">
+          <img src="img/img/ates-insaat-logo.png" alt="" width="180px" />
+        </a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="fa fa-bars"></span>
+        </button>
 
-        .section-title h2 {
-          font-size: 1.8rem;
-          /* Mobilde daha küçük bir başlık boyutu */
-        }
-
-        .section-title h3 {
-          font-size: 1.4rem;
-          /* Alt başlığı küçült */
-        }
-
-        iframe {
-          width: 100%;
-          /* Video boyutunu mobilde optimize eder */
-          height: auto;
-          /* Video yüksekliğini ekrana göre otomatik ayarlar */
-        }
-
-        img {
-          width: 100%;
-          /* Resimleri mobilde genişliğe uygun hale getirir */
-          height: auto;
-        }
-
-        .timeline-content p {
-          font-size: 14px;
-          /* Mobilde daha okunabilir bir metin boyutu */
-        }
-
-        .section-title {
-          margin-top: 20px;
-          /* Üst boşluk ekleyerek görsellerin üst üste binmesini engeller */
-        }
-
-        .about-left img:last-child {
-          height: 300px;
-          /* İstediğiniz yüksekliği burada ayarlayabilirsiniz */
-          object-fit: cover;
-          /* Resmin orantılı olarak kesilmesini sağlar */
-        }
-      }
-    </style>
-  </head>
-
-  <body>
-    <!-- TOP Header Area -->
-
-    <div class="top-bar">
-      <div class="containerTOP">
-        <div class="rowTOP">
-          <div class="col-md-6top">
-            <p>
-              <a
-                href="contact.html"
-                style="color: inherit; text-decoration: none"
-              >
-                <i class="fa fa-map-marker"></i>
-                Kavaklıdere/Çankaya - Ankara, Türkiye
-                <br />
-                Kazım Özalp Mahalesi Rabat Sokak No: 24
+        <div class="collapse navbar-collapse justify-content-end align-items-center" id="navbarSupportedContent">
+          <ul class="navbar-nav">
+            <li><a href="index.html">ANASAYFA</a></li>
+            <li><a class="active" href="about.html">HAKKIMIZDA</a></li>
+            <li class="dropdown">
+              <a class="dropdown-toggle" href="#" id="navbardrop" data-toggle="dropdown">
+                Projeler
               </a>
-            </p>
-          </div>
-          <div class="col-md-6top" style="margin-top: 10px; text-align: right">
-            <p>
-              <a
-                href="contact.html"
-                style="color: inherit; text-decoration: none"
-              >
-                <i class="fa fa-phone"></i>
-                (PBX) +90 (312) 491 69 12
+              <div class="dropdown-menu">
+                <a class="dropdown-item" href="projects.html">Tamamlanan Projeler</a>
+                <a class="dropdown-item" href="devamEdenProjeler.html">Devam Eden Projeler</a>
+              </div>
+            </li>
+            <li><a href="makineParki.html">MAKİNE PARKI</a></li>
+            <li><a href="galeri.html">GALERİ</a></li>
+            <li><a href="contact.html">İLETİŞİM</a></li>
+            <li>
+              <a href="indexEn.html">
+                <img src="img/img/tr.png" alt="Türk Bayrağı" style="width: 80px; margin-right: 10px" />
               </a>
-            </p>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+  </header>
+  <!-- End Header Area -->
+
+  <!-- Start top-section Area -->
+  <section style="background-color: #000000"></section>
+
+  <!-- End top-section Area -->
+
+  <!-- Start About Area -->
+  <section class="about-area section-gap-bottom">
+    <div class="container" style="margin-bottom: -200px">
+      <div class="row align-items-center justify-content-center">
+        <div class="section-title text-left mb-4">
+          <h3 style="color: #831919; font-weight: 600; text-align: center">
+            ATEŞ İNŞAAT
+          </h3>
+          <h2 style="font-size: 2.5rem; font-weight: 700; text-align: center">
+            Güven ve Kalite ile Geleceği İnşa Ediyoruz
+          </h2>
+        </div>
+        <div class="col-lg-7 col-md-12 about-left mb-4" style="margin-top: -100px">
+          <!-- YouTube videosu yerleştirildi -->
+          <iframe width="630" height="315" src="https://www.youtube.com/embed/RrO0RZv49lA?si=B8kdOW-IaQlxlZWw"
+            title="YouTube video player" frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+            referrerpolicy="strict-origin-when-cross-origin" allowfullscreen
+            style="width: 100%; height: auto; aspect-ratio: 16/9"></iframe>
+
+          <!-- Yeni eklenen resim -->
+          <img class="img-fluid rounded mt-4 mb-4" src="img/img/ates-insaat-14.jpg" alt="Ateş İnşaat İkinci Görseli" />
+          <!-- Yeni eklenen resim -->
+          <img class="img-fluid rounded mb-4" src="img/img/ates-insaat-makina-parki.jpg"
+            alt="Ateş İnşaat İkinci Görseli" />
+        </div>
+
+        <div class="col-lg-5 col-md-12 about-right" style="margin-top: -100px">
+          <div class="about-content">
+            <div class="timeline">
+              <div class="timeline-item mb-4">
+                <div class="timeline-content">
+                  <h3 style="font-weight: 600; color: #a52626">
+                    1973 - Kuruluş
+                  </h3>
+                  <p>
+                    Ateş İnşaat, 20 Şubat 1973 tarihinde Abdullah Ateş
+                    tarafından şahıs şirketi olarak kurulmuştur. Kuruluşundan
+                    bu yana, çeşitli altyapı projeleri, özellikle içme suyu ve
+                    kanalizasyon işleri yapmıştır.
+                  </p>
+                  <span class="date">20 Şubat 1973</span>
+                </div>
+              </div>
+
+              <div class="timeline-item mb-4">
+                <div class="timeline-content">
+                  <h3 style="font-weight: 600; color: #a52626">
+                    1987 - Limited Şirkete Dönüşüm
+                  </h3>
+                  <p>27 Mart 1987'de Limited Şirkete dönüşmüştür.</p>
+                  <span class="date">27 Mart 1987</span>
+                </div>
+              </div>
+
+              <div class="timeline-item mb-4">
+                <div class="timeline-content">
+                  <h3 style="font-weight: 600; color: #a52626">
+                    2016 - Anonim Şirket Olma
+                  </h3>
+                  <p>23 Mayıs 2016'da Anonim Şirket olmuştur.</p>
+                  <span class="date">23 Mayıs 2016</span>
+                </div>
+              </div>
+
+              <div class="timeline-item mb-4">
+                <div class="timeline-content">
+                  <h3 style="font-weight: 600; color: #a52626">
+                    Yönetim Değişiklikleri
+                  </h3>
+                  <p>
+                    2016'dan itibaren Yönetim Kurulu Başkanlığına Cevdet Ateş
+                    atanmıştır.
+                  </p>
+                  <span class="date">2016 - 2024</span>
+                </div>
+              </div>
+
+              <div class="timeline-item mb-4">
+                <div class="timeline-content">
+                  <h3 style="font-weight: 600; color: #a52626">
+                    Vizyon ve Misyon
+                  </h3>
+                  <p>
+                    Değerli anlarınızın görünmez kahramanı olarak sizlerin ve
+                    ülkemizin yaşam standartlarını en üst seviyeye çıkarmak
+                    için elimizden geleni yapmaktayız. Bugüne kadar yurt
+                    içinde ve yurt dışında birçok başarılı projeye imza attık.
+                    Huzur, güvenlik ve refahın sembolü ülkemiz için hep
+                    birlikte en iyisine!
+                  </p>
+                </div>
+              </div>
+            </div>
           </div>
         </div>
       </div>
     </div>
+  </section>
+  <!-- End About Area -->
 
-    <!-- Start Header Area -->
-    <header class="default-header">
-      <nav class="navbar navbar-expand-lg navbar-light">
-        <div class="container">
-          <a class="navbar-brand" href="index.html">
-            <img src="img/img/ates-insaat-logo.png" alt="" width="200px" />
-          </a>
-          <button
-            class="navbar-toggler"
-            type="button"
-            data-toggle="collapse"
-            data-target="#navbarSupportedContent"
-            aria-controls="navbarSupportedContent"
-            aria-expanded="false"
-            aria-label="Toggle navigation"
-          >
-            <span class="fa fa-bars"></span>
-          </button>
+  <!-- Start brands Area -->
+	<section style="margin-top: 50px !important;" class="brands-area">
+		<div class="container no-padding">
+			<div class="brand-wrap section-gap">
+				<div class="owl-carousel owl-theme">
+					<div class="col">
+						<a href="#"><img class="mx-auto" src="img/img/Referanslar/logo-abb.png" alt="" /></a>
+					</div>
+					<div class="col">
+						<a href="#"><img class="mx-auto" src="img/img/Referanslar/logo-ankara-valiligi.png"
+								alt="" /></a>
+					</div>
+					<div class="col">
+						<a href="#"><img class="mx-auto" src="img/img/Referanslar/logo-aski.png" alt="" /></a>
+					</div>
+					<div class="col">
+						<a href="#"><img class="mx-auto" src="img/img/Referanslar/logo-aso.png" alt="" /></a>
+					</div>
+					<div class="col">
+						<a href="#"><img class="mx-auto" src="img/img/Referanslar/logo-bursabb.png" alt="" /></a>
+					</div>
+					<div class="col">
+						<a href="#"><img class="mx-auto" src="img/img/Referanslar/logo-buski.png" alt="" /></a>
+					</div>
+					<div class="col">
+						<a href="#"><img class="mx-auto" src="img/img/Referanslar/logo-cumhurbaskanligi.png"
+								alt="" /></a>
+					</div>
+					<div class="col">
+						<a href="#"><img class="mx-auto" src="img/img/Referanslar/logo-dsi.png" alt="" /></a>
+					</div>
+					<div class="col">
+						<a href="#"><img class="mx-auto" src="img/img/Referanslar/logo-hab.png" alt="" /></a>
+					</div>
+					<div class="col">
+						<a href="#"><img class="mx-auto" src="img/img/Referanslar/logo-ilbank.png" alt="" /></a>
+					</div>
+					<div class="col">
+						<a href="#"><img class="mx-auto" src="img/img/Referanslar/logo-kgm.png" alt="" /></a>
+					</div>
+					<div class="col">
+						<a href="#"><img class="mx-auto" src="img/img/Referanslar/logo-meb.png" alt="" /></a>
+					</div>
+					<div class="col">
+						<a href="#"><img class="mx-auto" src="img/img/Referanslar/logo-ssb.png" alt="" /></a>
+					</div>
+					<div class="col">
+						<a href="#"><img class="mx-auto" src="img/img/Referanslar/logo-cevresehircilik.png"
+								alt="" /></a>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+	<!-- End brands Area -->
 
-          <div
-            class="collapse navbar-collapse justify-content-end align-items-center"
-            id="navbarSupportedContent"
-          >
-            <ul class="navbar-nav">
-              <li><a href="index.html">ANASAYFA</a></li>
-              <li><a class="active" href="about.html">HAKKIMIZDA</a></li>
-              <li class="dropdown">
-                <a
-                  class="dropdown-toggle"
-                  href="#"
-                  id="navbardrop"
-                  data-toggle="dropdown"
-                >
-                  Projeler
-                </a>
-                <div class="dropdown-menu">
-                  <a class="dropdown-item" href="projects.html"
-                    >Tamamlanan Projeler</a
-                  >
-                  <a class="dropdown-item" href="devamEdenProjeler.html"
-                    >Devam Eden Projeler</a
-                  >
-                </div>
-              </li>
-              <li><a href="makineParki.html">MAKİNE PARKI</a></li>
-              <li><a href="galeri.html">GALERİ</a></li>
-              <li><a href="contact.html">İLETİŞİM</a></li>
-            </ul>
-          </div>
-        </div>
-
-        <li
-          style="
-            list-style-type: none;
-            padding: 0;
-            margin: 0;
-            text-align: right;
-            margin-right: 50px;
-          "
-        >
-          <a href="indexEn.html">
-            <img
-              src="img/img/tr.png"
-              alt="Türk Bayrağı"
-              style="width: 80px; margin-right: 10px"
-            />
-          </a>
-        </li>
-      </nav>
-    </header>
-    <!-- End Header Area -->
-
-    <!-- Start top-section Area -->
-    <section style="background-color: #000000"></section>
-
-    <!-- End top-section Area -->
-
-    <!-- Start About Area -->
-    <section class="about-area section-gap-bottom">
-      <div class="container" style="margin-bottom: -200px">
-        <div class="row align-items-center justify-content-center">
-          <div class="section-title text-left mb-4">
-            <h3 style="color: #831919; font-weight: 600; text-align: center">
-              ATEŞ İNŞAAT
-            </h3>
-            <h2 style="font-size: 2.5rem; font-weight: 700; text-align: center">
-              Güven ve Kalite ile Geleceği İnşa Ediyoruz
-            </h2>
-          </div>
-          <div
-            class="col-lg-7 col-md-12 about-left mb-4"
-            style="margin-top: -100px"
-          >
-            <!-- YouTube videosu yerleştirildi -->
-            <iframe
-              width="630"
-              height="315"
-              src="https://www.youtube.com/embed/RrO0RZv49lA?si=B8kdOW-IaQlxlZWw"
-              title="YouTube video player"
-              frameborder="0"
-              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-              referrerpolicy="strict-origin-when-cross-origin"
-              allowfullscreen
-              style="width: 100%; height: auto; aspect-ratio: 16/9"
-            ></iframe>
-
-            <!-- Yeni eklenen resim -->
-            <img
-              class="img-fluid rounded mt-4 mb-4"
-              src="img/img/ates-insaat-14.jpg"
-              alt="Ateş İnşaat İkinci Görseli"
-            />
-            <!-- Yeni eklenen resim -->
-            <img
-              class="img-fluid rounded mb-4"
-              src="img/img/ates-insaat-makina-parki.jpg"
-              alt="Ateş İnşaat İkinci Görseli"
-            />
-          </div>
-
-          <div
-            class="col-lg-5 col-md-12 about-right"
-            style="margin-top: -100px"
-          >
-            <div class="about-content">
-              <div class="timeline">
-                <div class="timeline-item mb-4">
-                  <div class="timeline-content">
-                    <h3 style="font-weight: 600; color: #a52626">
-                      1973 - Kuruluş
-                    </h3>
-                    <p>
-                      Ateş İnşaat, 20 Şubat 1973 tarihinde Abdullah Ateş
-                      tarafından şahıs şirketi olarak kurulmuştur. Kuruluşundan
-                      bu yana, çeşitli altyapı projeleri, özellikle içme suyu ve
-                      kanalizasyon işleri yapmıştır.
-                    </p>
-                    <span class="date">20 Şubat 1973</span>
-                  </div>
-                </div>
-
-                <div class="timeline-item mb-4">
-                  <div class="timeline-content">
-                    <h3 style="font-weight: 600; color: #a52626">
-                      1987 - Limited Şirkete Dönüşüm
-                    </h3>
-                    <p>27 Mart 1987'de Limited Şirkete dönüşmüştür.</p>
-                    <span class="date">27 Mart 1987</span>
-                  </div>
-                </div>
-
-                <div class="timeline-item mb-4">
-                  <div class="timeline-content">
-                    <h3 style="font-weight: 600; color: #a52626">
-                      2016 - Anonim Şirket Olma
-                    </h3>
-                    <p>23 Mayıs 2016'da Anonim Şirket olmuştur.</p>
-                    <span class="date">23 Mayıs 2016</span>
-                  </div>
-                </div>
-
-                <div class="timeline-item mb-4">
-                  <div class="timeline-content">
-                    <h3 style="font-weight: 600; color: #a52626">
-                      Yönetim Değişiklikleri
-                    </h3>
-                    <p>
-                      2016'dan itibaren Yönetim Kurulu Başkanlığına Cevdet Ateş
-                      atanmıştır.
-                    </p>
-                    <span class="date">2016 - 2024</span>
-                  </div>
-                </div>
-
-                <div class="timeline-item mb-4">
-                  <div class="timeline-content">
-                    <h3 style="font-weight: 600; color: #a52626">
-                      Vizyon ve Misyon
-                    </h3>
-                    <p>
-                      Değerli anlarınızın görünmez kahramanı olarak sizlerin ve
-                      ülkemizin yaşam standartlarını en üst seviyeye çıkarmak
-                      için elimizden geleni yapmaktayız. Bugüne kadar yurt
-                      içinde ve yurt dışında birçok başarılı projeye imza attık.
-                      Huzur, güvenlik ve refahın sembolü ülkemiz için hep
-                      birlikte en iyisine!
-                    </p>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-    <!-- End About Area -->
-
-    <!-- Start brands Area -->
-    <section class="brands-area">
-      <div class="container no-padding">
-        <div class="brand-wrap section-gap">
-          <div
-            class="owl-carousel owl-theme"
-          >
-            <div class="col">
-              <a href="#"
-                ><img
-                  class="mx-auto"
-                  src="img/img/Referanslar/logo-abb.png"
-                  alt=""
-              /></a>
-            </div>
-            <div class="col">
-              <a href="#"
-                ><img
-                  class="mx-auto"
-                  src="img/img/Referanslar/logo-ankara-valiligi.png"
-                  alt=""
-              /></a>
-            </div>
-            <div class="col">
-              <a href="#"
-                ><img
-                  class="mx-auto"
-                  src="img/img/Referanslar/logo-aski.png"
-                  alt=""
-              /></a>
-            </div>
-            <div class="col">
-              <a href="#"
-                ><img
-                  class="mx-auto"
-                  src="img/img/Referanslar/logo-aso.png"
-                  alt=""
-              /></a>
-            </div>
-            <div class="col">
-              <a href="#"
-                ><img
-                  class="mx-auto"
-                  src="img/img/Referanslar/logo-bursabb.png"
-                  alt=""
-              /></a>
-            </div>
-            <div class="col">
-              <a href="#"
-                ><img
-                  class="mx-auto"
-                  src="img/img/Referanslar/logo-buski.png"
-                  alt=""
-              /></a>
-            </div>
-            <div class="col">
-              <a href="#"
-                ><img
-                  class="mx-auto"
-                  src="img/img/Referanslar/logo-cumhurbaskanligi.png"
-                  alt=""
-              /></a>
-            </div>
-            <div class="col">
-              <a href="#"
-                ><img
-                  class="mx-auto"
-                  src="img/img/Referanslar/logo-dsi.png"
-                  alt=""
-              /></a>
-            </div>
-            <div class="col">
-              <a href="#"
-                ><img
-                  class="mx-auto"
-                  src="img/img/Referanslar/logo-hab.png"
-                  alt=""
-              /></a>
-            </div>
-            <div class="col">
-              <a href="#"
-                ><img
-                  class="mx-auto"
-                  src="img/img/Referanslar/logo-ilbank.png"
-                  alt=""
-              /></a>
-            </div>
-            <div class="col">
-              <a href="#"
-                ><img
-                  class="mx-auto"
-                  src="img/img/Referanslar/logo-kgm.png"
-                  alt=""
-              /></a>
-            </div>
-            <div class="col">
-              <a href="#"
-                ><img
-                  class="mx-auto"
-                  src="img/img/Referanslar/logo-meb.png"
-                  alt=""
-              /></a>
-            </div>
-            <div class="col">
-              <a href="#"
-                ><img
-                  class="mx-auto"
-                  src="img/img/Referanslar/logo-ssb.png"
-                  alt=""
-              /></a>
-            </div>
-            <div class="col">
-              <a href="#"
-                ><img
-                  class="mx-auto"
-                  src="img/img/Referanslar/logo-cevresehircilik.png"
-                  alt=""
-              /></a>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-    <!-- End brands Area -->
-
-    <!-- FOOTER Area -->
-    <footer class="main-footer">
-      <div class="container">
-        <div class="footer-content">
-          <div class="row">
-            <div class="col-lg-4 col-md-6 col-sm-12 footer-column">
-              <div class="logo-widget footer-widget">
-                <figure class="logo-box">
-                  <a href="#"
-                    ><img src="img/img/ates-insaat-logo.png" alt="logo"
-                  /></a>
-                </figure>
-                <div class="text">
-                  <p>
-                    Ateş İnşaat, 1979’dan beri altyapı, yol yapımı, elektrik ve
-                    doğalgaz sistemlerinde kalite ve güveni en ön planda
-                    tutarak, Türkiye'nin refahına katkı sağlamak amacıyla yurt
-                    içi ve yurt dışındaki projeleriyle hizmet vermektedir.
-                  </p>
-                </div>
-                <ul class="footer-social">
-                  <li>
-                    <a href="#"><i class="fa fa-facebook-f"></i></a>
-                  </li>
-                  <li>
-                    <a href="#"><i class="fa fa-twitter"></i></a>
-                  </li>
-                  <li>
-                    <a href="#"><i class="fa fa-instagram"></i></a>
-                  </li>
-                  <li>
-                    <a href="#"><i class="fa fa-linkedin"></i></a>
-                  </li>
-                </ul>
-              </div>
-            </div>
-            <div class="col-lg-3 col-md-6 col-sm-12 offset-lg-2 footer-column">
-              <div class="service-widget footer-widget">
-                <div class="footer-title">Site Haritası</div>
-                <ul class="list">
-                  <li><a href="index.html">Anasayfa</a></li>
-                  <li><a href="about.html">Hakkımızda</a></li>
-                  <li><a href="projects.html">Projeler</a></li>
-                  <li><a href="makineParki.html">Makine Parkı</a></li>
-                  <li><a href="galeri.html">Galeri</a></li>
-                  <li><a href="contact.html">İletişim</a></li>
-                </ul>
-              </div>
-            </div>
-            <div class="col-lg-3 col-md-6 col-sm-12 footer-widget">
-              <div class="contact-widget footer-widget">
-                <div class="footer-title">İletişim</div>
-                <div class="text">
-                  <p>
-                    Kavaklıdere/Çankaya - Ankara,Türkiye <br />
-                    Kazım Özalp Mahalesi Rabat Sokak No: 24
-                  </p>
-                  <p>Telefon: <br />+90 (312) 491 69 12</p>
-                  <p>
-                    Faks: <br />
-                    +90 (312) 491 69 26
-                  </p>
-                  <p>info@atesinsaat.com</p>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </footer>
-    <div class="footer-bottom">
-      <div class="container">
+  <!-- FOOTER Area -->
+  <footer class="main-footer">
+    <div class="container">
+      <div class="footer-content">
         <div class="row">
-          <div class="col-lg-6 col-md-6 col-sm-12 column">
-            <div class="copyright">
-              <a href="#">TU & AL</a> &copy;
-              <script>
-                document.write(new Date().getFullYear());
-              </script>
-              Tüm Hakları Saklıdır.
+          <div class="col-lg-4 col-md-6 col-sm-12 footer-column">
+            <div class="logo-widget footer-widget">
+              <figure class="logo-box">
+                <a href="#"><img src="img/img/ates-insaat-logo.png" alt="logo" /></a>
+              </figure>
+              <div class="text">
+                <p>
+                  Ateş İnşaat, 1979’dan beri altyapı, yol yapımı, elektrik ve
+                  doğalgaz sistemlerinde kalite ve güveni en ön planda
+                  tutarak, Türkiye'nin refahına katkı sağlamak amacıyla yurt
+                  içi ve yurt dışındaki projeleriyle hizmet vermektedir.
+                </p>
+              </div>
+              <ul class="footer-social">
+                <li>
+                  <a href="#"><i class="fa fa-facebook-f"></i></a>
+                </li>
+                <li>
+                  <a href="#"><i class="fa fa-twitter"></i></a>
+                </li>
+                <li>
+                  <a href="#"><i class="fa fa-instagram"></i></a>
+                </li>
+                <li>
+                  <a href="#"><i class="fa fa-linkedin"></i></a>
+                </li>
+              </ul>
             </div>
           </div>
-          <div class="col-lg-6 col-md-6 col-sm-12 column">
-            <ul class="footer-nav">
-              <li><a href="#">Hizmet Şartları</a></li>
-              <li><a href="#">Gizlilik Politikası</a></li>
-            </ul>
+          <div class="col-lg-3 col-md-6 col-sm-12 offset-lg-2 footer-column">
+            <div class="service-widget footer-widget">
+              <div class="footer-title">Site Haritası</div>
+              <ul class="list">
+                <li><a href="index.html">Anasayfa</a></li>
+                <li><a href="about.html">Hakkımızda</a></li>
+                <li><a href="projects.html">Projeler</a></li>
+                <li><a href="makineParki.html">Makine Parkı</a></li>
+                <li><a href="galeri.html">Galeri</a></li>
+                <li><a href="contact.html">İletişim</a></li>
+              </ul>
+            </div>
+          </div>
+          <div class="col-lg-3 col-md-6 col-sm-12 footer-widget">
+            <div class="contact-widget footer-widget">
+              <div class="footer-title">İletişim</div>
+              <div class="text">
+                <p>
+                  Kavaklıdere/Çankaya - Ankara,Türkiye <br />
+                  Kazım Özalp Mahalesi Rabat Sokak No: 24
+                </p>
+                <p>Telefon: <br />+90 (312) 491 69 12</p>
+                <p>
+                  Faks: <br />
+                  +90 (312) 491 69 26
+                </p>
+                <p>info@atesinsaat.com</p>
+              </div>
+            </div>
           </div>
         </div>
       </div>
     </div>
-    <!-- FOOTER Area END -->
+  </footer>
+  <div class="footer-bottom">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-6 col-md-6 col-sm-12 column">
+          <div class="copyright">
+            <a href="#">TU & AL</a> &copy;
+            <script>
+              document.write(new Date().getFullYear());
+            </script>
+            Tüm Hakları Saklıdır.
+          </div>
+        </div>
+        <div class="col-lg-6 col-md-6 col-sm-12 column">
+          <ul class="footer-nav">
+            <li><a href="#">Hizmet Şartları</a></li>
+            <li><a href="#">Gizlilik Politikası</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- FOOTER Area END -->
 
-    <script src="js/vendor/jquery-2.2.4.min.js"></script>
-    <script
-      src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.11.0/umd/popper.min.js"
-      integrity="sha384-b/U6ypiBEHpOf/4+1nzFpr53nxSS+GLCkfwBdFNTxtclqqenISfwAzpKaMNFNmj4"
-      crossorigin="anonymous"
-    ></script>
-    <script src="js/vendor/bootstrap.min.js"></script>
-    <script src="js/jquery.ajaxchimp.min.js"></script>
-    <script src="js/parallax.min.js"></script>
-    <script src="js/owl.carousel.min.js"></script>
-    <script src="js/isotope.pkgd.min.js"></script>
-    <script src="js/jquery.nice-select.min.js"></script>
-    <script src="js/jquery.magnific-popup.min.js"></script>
-    <script src="js/jquery.sticky.js"></script>
-    <script src="js/main.js"></script>
-    <script src="js/banner.js"></script>
+  <script src="js/vendor/jquery-2.2.4.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.11.0/umd/popper.min.js"
+    integrity="sha384-b/U6ypiBEHpOf/4+1nzFpr53nxSS+GLCkfwBdFNTxtclqqenISfwAzpKaMNFNmj4"
+    crossorigin="anonymous"></script>
+  <script src="js/vendor/bootstrap.min.js"></script>
+  <script src="js/jquery.ajaxchimp.min.js"></script>
+  <script src="js/parallax.min.js"></script>
+  <script src="js/owl.carousel.min.js"></script>
+  <script src="js/isotope.pkgd.min.js"></script>
+  <script src="js/jquery.nice-select.min.js"></script>
+  <script src="js/jquery.magnific-popup.min.js"></script>
+  <script src="js/jquery.sticky.js"></script>
+  <script src="js/main.js"></script>
+  <script src="js/banner.js"></script>
 
-    <script>
-      $(document).ready(function () {
-        $(".owl-carousel").owlCarousel({
-          items: 5, // Aynı anda gösterilecek öğe sayısı
-          loop: true, // Sonsuz döngü
-          margin: 10, // Elemanlar arasındaki boşluk
-          autoplay: true, // Otomatik oynatma
-          autoplayTimeout: 2000, // Otomatik oynatma süresi
-		  autoplaySpeed: 1000,
-          autoplayHoverPause: false, // Fare üzerine geldiğinde durdur
-        });
+  <script>
+    $(document).ready(function () {
+      $(".owl-carousel").owlCarousel({
+        items: 5, // Aynı anda gösterilecek öğe sayısı
+        loop: true, // Sonsuz döngü
+        margin: 10, // Elemanlar arasındaki boşluk
+        autoplay: true, // Otomatik oynatma
+        autoplayTimeout: 2000, // Otomatik oynatma süresi
+        autoplaySpeed: 1000,
+        autoplayHoverPause: false, // Fare üzerine geldiğinde durdur
       });
-    </script>
-  </body>
+    });
+  </script>
+</body>
+
 </html>

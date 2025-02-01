@@ -1165,7 +1165,7 @@ th {
 
 @media (min-width: 991px) {
   .default-header .dropdown .dropdown-menu {
-    display: none;
+    display: inline;
     opacity: 0;
     visibility: hidden;
     -webkit-transition: all 200ms ease-in;
@@ -1200,7 +1200,7 @@ th {
 
 @media (max-width: 767px) {
   .default-header .dropdown-menu {
-    margin-top: 0px;
+    margin-top: -10px;
   }
 }
 
@@ -1467,13 +1467,9 @@ th {
   color: #a52626;
 }
 
-@media (max-width: 767px) {
-  .head-bottom-meta .flex-row {
-    flex-direction: column !important;
-  }
-
-  .head-bottom-meta .d-flex {
-    display: block !important;
+@media (max-width: 768px) {
+  .head-bottom-meta {
+    display: none; /* Mobilde tamamen gizle */
   }
 }
 

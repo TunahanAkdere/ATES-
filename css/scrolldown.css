@@ -31,7 +31,7 @@
 
 @keyframes move {
   0% {
-    transform: translate(-50%, 10px);
+    transform: translate(-50%, -10px);
     opacity: 0;
   }
   50% {
@@ -39,7 +39,7 @@
     opacity: 1;
   }
   100% {
-    transform: translate(-50%, 80px);
+    transform: translate(-50%, 60px);
     opacity: 0;
   }
 }
@@ -73,16 +73,6 @@
 
 @media (max-width: 480px) {
   #scroll-down-animation {
-    top: 60%; /* Ekranın alt kısmına daha yakın */
-    left: 44%; /* Sağdan daha fazla boşluk */
-  }
-
-  .mouse {
-    height: 60px; /* Daha da küçük boyut */
-    width: 30px;
-  }
-
-  h2 {
-    font-size: 12px; /* Çok daha küçük bir font boyutu */
+    display: none; /* Mobilde tamamen gizle */
   }
 }
