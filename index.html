@@ -120,37 +120,12 @@
 			/* Ortalamak için */
 		}
 
-		/* Mobil Cihazlarda "Hakkımızda" Butonunun Altında Dursun */
-		@media (max-width: 768px) {
-			.head-bottom-meta {
-				display: flex;
-				justify-content: center;
-				margin-top: 20px;
-				/* Daha fazla boşluk ekleyerek denge sağladım */
-			}
-
-			.banner-text {
-				display: flex;
-				flex-direction: column;
-				align-items: center;
-			}
-
-			.primary-btn {
-				margin-bottom: 15px;
-				/* Sosyal medya ikonları ile mesafe bırak */
-			}
-
-			.meta-left {
-				display: flex;
-				gap: 15px;
-				/* İkonlar arasına boşluk ekle */
-			}
-
-			.meta-left a {
-				font-size: 20px;
-				/* Mobilde ikonları biraz büyüt */
-			}
-		}
+		/* Mobil Cihazlarda (768px ve daha küçük) Sosyal Medya Bölümünü Gizle */
+@media (max-width: 768px) {
+  .head-bottom-meta {
+    display: none; /* Mobilde tamamen gizle */
+  }
+}
 	</style>
 </head>
 
